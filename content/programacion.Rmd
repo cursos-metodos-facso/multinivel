@@ -5,3 +5,20 @@ slug: programacion
 
 
 <embed src="/programa/multinivel2019prog_sesiones.pdf" type="application/pdf" width="90%" height="600px" />
+
+<br>
+
+<i class="fas fa-chalkboard-teacher"></i> Documentos de presentación
+
+<i class="fas fa-book-reader"></i> Lecturas
+
+<i class="fas fa-user-edit"></i> Evaluaciones, talleres y otros
+
+<br>
+
+| | | <i class="fas fa-chalkboard-teacher"></i> |<i class="fas fa-book-reader"></i> | <i class="fas fa-user-edit"></i> |
+|----- | -- |-----------------|-------------------------- |-------------|
+| Agosto | 6  | [**Introducción**](../docpres/01_intro/1mlmintro.html)   | [Coleman 1986](../readings/coleman1986.pdf)  | |
+|        | 13 |    |      | |
+|        | 20 |     |      |  |
+|        | 27  |   |   |    |
