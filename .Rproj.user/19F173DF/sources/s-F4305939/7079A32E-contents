@@ -1,0 +1,73 @@
+baseURL: "/"
+languageCode: en-us
+title: Estrategias de investigación cuantitativa
+theme: "jcc-tufte-hugo"
+googleAnalytics: ""
+ignoreFiles:
+  - \.Rmd$
+  - \.Rmarkdown$
+  - \.yaml$
+  - _files$
+  - _cache$
+  - \.csl$
+  - \.key$
+permalinks:
+  post: "/:year/:month/:day/:slug/"
+buildFuture: true
+menu:
+  main:
+    - name: Programa
+      url: /syllabus/
+      weight: 1
+    - name: Evaluaciones
+      url: /assignments/
+      weight: 3
+    - name: Sesiones
+      url: /schedule/
+      weight: 2
+    - name: Referencias
+      url: /reference/
+      weight: 4
+# Disable taxonomies
+taxonomies:
+  tag: ""
+  group: ""
+  category: ""
+params:
+  author: Juan Carlos Castillo
+  thumbnail: /images/dmgt_meta.png
+  instructor:
+    name: Juan Carlos Castillo
+    email: juancastillo@uchile.cl
+    url: "https://jc-castillo.com"
+    twitter: juankcastillo
+    github: juancarloscastillo
+    office: "FACSO 325"
+  course:
+    number:
+    semester: 1ero 2019
+    days: "Lunes"
+    time: "10:15AM-13:15PM"
+    location: "FACSO Aulario poniente 7"
+    twitter: juankcastillo
+    dates: "Marzo-Julio, 2019"
+    github: "juancarloscastillo/datamanagement"
+    copyrightYear: "2019"
+    contactDetails: >-
+      Horas de oficina: Con cita previa.
+  university:
+    name: Universidad de Chile
+    url: "https://www.uchile.cl"
+  school:
+    name: Departamento de Sociología
+    url: "http://www.facso.uchile.cl/sociologia"
+  description: "Plain text social science"
+  primaryColor: "#325C8E"
+  secondaryColor: "#74080A"
+  credits: >-
+  logo:
+    url: /images/dmgt_hires.png
+    alt: Data Management
+  meta:
+    twitterSite: "@kjhealy"
+    twitterCreator: "@kjhealy"

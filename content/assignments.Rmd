@@ -1,0 +1,6 @@
+---
+title: "Evaluaciones"
+slug: assignments
+---
+
+(Aquí mayor detalle de las evaluaciones)

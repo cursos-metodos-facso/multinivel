@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Classes on Estrategias de investigación cuantitativa</title>
+    <link>/class/</link>
+    <description>Recent content in Classes on Estrategias de investigación cuantitativa</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Thu, 07 Feb 2019 00:00:00 +0000</lastBuildDate>
+    
+	<atom:link href="/class/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Missing Data</title>
+      <link>/class/05-missing-data/</link>
+      <pubDate>Thu, 07 Feb 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/class/05-missing-data/</guid>
+      <description> Contents  Slides Links Reading   Slides Slides from class (PDF)
+Links Reading </description>
+    </item>
+    
+    <item>
+      <title>Recoding Data</title>
+      <link>/class/04-recoding/</link>
+      <pubDate>Thu, 31 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/class/04-recoding/</guid>
+      <description> Contents  Slides Links Reading   Slides Slides from class (PDF)
+Links Reading </description>
+    </item>
+    
+    <item>
+      <title>Getting Data in to R</title>
+      <link>/class/03-data-in/</link>
+      <pubDate>Thu, 24 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/class/03-data-in/</guid>
+      <description> Contents  Slides Links Reading   Slides Slides from class (PDF)
+Links Reading </description>
+    </item>
+    
+    <item>
+      <title>Models of Work</title>
+      <link>/class/02-models/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/class/02-models/</guid>
+      <description> Contents  Slides Links Reading   Slides Slides from class (PDF)
+Links  Happy Git with R  Reading </description>
+    </item>
+    
+    <item>
+      <title>Models of Work</title>
+      <link>/class/02-models.knit/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/class/02-models.knit/</guid>
+      <description> Slides Slides from class (PDF)
+Links  Happy Git with R  Reading </description>
+    </item>
+    
+    <item>
+      <title>Models of Work</title>
+      <link>/class/02-models.utf8/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/class/02-models.utf8/</guid>
+      <description> Slides Slides from class (PDF)
+Links  Happy Git with R  Reading </description>
+    </item>
+    
+    <item>
+      <title>Introduction</title>
+      <link>/class/01-class/</link>
+      <pubDate>Thu, 10 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/class/01-class/</guid>
+      <description> Contents  Slides Links Reading   Slides Slides from class (PDF)
+Links  The R Project for Statistical Computing R Studio Happy Git with R  Reading Skim, if you like:
+ Kieran Healy, The Plain Person’s Guide to Plain-Text Social Science (Online, 2018), https://plain-text.co.  </description>
+    </item>
+    
+  </channel>
+</rss>

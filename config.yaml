@@ -1,0 +1,73 @@
+baseURL: "/"
+languageCode: en-us
+title: Métodos Multinivel
+theme: "jcc-tufte-hugo"
+googleAnalytics: ""
+ignoreFiles:
+  - \.Rmd$
+  - \.Rmarkdown$
+  - \.yaml$
+  - _files$
+  - _cache$
+  - \.csl$
+  - \.key$
+permalinks:
+  post: "/:year/:month/:day/:slug/"
+buildFuture: true
+menu:
+  main:
+    - name: Programa
+      url: /syllabus/
+      weight: 1
+    - name: Evaluaciones
+      url: /assignments/
+      weight: 3
+    - name: Sesiones
+      url: /programacion/
+      weight: 2
+    - name: Links
+      url: /links/
+      weight: 4
+# Disable taxonomies
+taxonomies:
+  tag: ""
+  group: ""
+  category: ""
+params:
+  author: Juan Carlos Castillo
+  thumbnail: /images/dmgt_meta.png
+  instructor:
+    name: Juan Carlos Castillo
+    email: juancastillov@uchile.cl
+    url: "https://jc-castillo.com"
+    twitter: juankcastillo
+    github: juancarloscastillo
+    office: "Of.325 - Edificio Nuevo FACSO"
+  course:
+    number:
+    semester: 2do SEM 2019
+    days: "Jueves"
+    time: "14:30PM-16:30PM"
+    location: "Sala A11"
+    twitter: juankcastillo
+    dates: "Agosto-Diciembre, 2019"
+    github: "juancarloscastillo/estrategias-ic"
+    copyrightYear: "2019"
+    contactDetails: >-
+      Horas reunión: reservar [aquí](https://juancarloscastillo.github.io/jc-castillo/contact.html)
+  university:
+    name: Universidad de Chile
+    url: "https://www.uchile.cl"
+  school:
+    name: Departamento de Sociología
+    url: "http://www.facso.uchile.cl/sociologia"
+  description: "Sociología"
+  primaryColor: "#325C8E"
+  secondaryColor: "#74080A"
+  credits: >-
+  logo:
+    url: /images/hex_eic.png
+    alt: Data Management
+  meta:
+    twitterSite: "@juankcastillo"
+    twitterCreator: "@juankcastillo"

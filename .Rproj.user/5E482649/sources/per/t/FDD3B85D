@@ -1,0 +1,25 @@
+{
+    "collab_server" : "",
+    "contents" : "",
+    "created" : 1564493576315.000,
+    "dirty" : false,
+    "encoding" : "UTF-8",
+    "folds" : "",
+    "hash" : "3956757797",
+    "id" : "FDD3B85D",
+    "lastKnownWriteTime" : 1564359100,
+    "last_content_update" : 1564359100,
+    "path" : "~/Dropbox/cursos 2/facso/estrat_invcuanti/estrategias-ic/content/reading/02-reading.Rmd",
+    "project_path" : "content/reading/02-reading.Rmd",
+    "properties" : {
+        "cursorPosition" : "10,0",
+        "scrollLine" : "0"
+    },
+    "read_only" : false,
+    "read_only_alternatives" : [
+    ],
+    "relative_order" : 7,
+    "source_on_save" : false,
+    "source_window" : "",
+    "type" : "r_markdown"
+}

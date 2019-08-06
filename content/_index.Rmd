@@ -1,0 +1,8 @@
+---
+title: ""
+author: "Juan Carlos Castillo"
+---
+
+<figure>
+[![](/images/portada.png)](/images/portada.png)^[{-} `r blogdown::shortcode("courseinfo")`]
+</figure>

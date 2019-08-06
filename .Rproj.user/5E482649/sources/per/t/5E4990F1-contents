@@ -1,0 +1,122 @@
+---
+title: Programa
+slug: syllabus
+citeproc: false
+bibliography: ../static/bib/references.bib
+csl: ../static/bib/chicago-syllabus-no-bib.csl
+---
+
+```{r load-libraries, message=FALSE, warning=FALSE, include=FALSE}
+library(dplyr)
+library(tibble)
+library(pander)
+```
+
+[^courseinfo]: {-}
+  `r blogdown::shortcode("courseinfo")`
+
+
+# Propósitos del curso
+
+Al finalizar el curso los/as estudiantes conocerán distintas estrategias de investigación cuantitativa partir de las cuales serán capaces de identificar y construir problemas y objetos de investigación factibles de ser abordados a través de cuestionarios.
+
+Se espera que los estudiantes conozcan, a partir de la revisión de ejemplos actuales y de reconocida calidad científica, distintas experiencias de investigación cuantitativa; conozcan, diseñen y validen cuestionarios y escalas en el marco de la investigación social; conozcan, construyan y validen índices de medición de diferentes constructos sociales; apliquen los conocimientos adquiridos en los cursos de estadística descriptiva e inferencial; articulen y fundamenten las decisiones adoptadas para abordar y analizar un problema de investigación a través de técnicas cuantitativas; integren en la definición de problemas y de decisiones metodológicas fundamentos teóricos de carácter sociológico.
+
+Complementariamente, se espera que los estudiantes adquieran herramientas que les permitan comunicar diseños y resultados de investigación en contextos sociales, profesionales y académicos.
+
+
+# Orientación
+
+El presente curso se propone desarrollar en las y los estudiantes las habilidades necesarias para:
+
+1. Reconocer, comprender y explicar las potencialidades y limitaciones de la investigación social cuantitativa.
+
+2. Operacionalizar conceptos simples y complejos, definiendo y delimitando dimensiones, subdimensiones e indicadores observables para la medición de variables en ciencias sociales.
+
+3. Seleccionar, evaluar, y construir instrumentos de medición cuantitativa (cuestionarios, índices y escalas) posibles de utilizar en investigación por encuestas.
+
+4. Comunicar de manera eficiente y abierta la estrategia de investigación como así sus resultados en diferentes instancias (artículos y presentaciones), y para audiencias tanto académicas y como no académicas.
+
+# Contenidos
+
+## Primera unidad. Características, potencialidades y limitaciones de la investigación cuantitativa
+
+a) Limitaciones y potencialidades de la investigación cuantitativa.
+b) La formulación de una investigación cuantitativa.
+c) El diseño en la investigación cuantitativa: problema, objetivos, hipótesis y relevancias.
+d) Instrumentos y tipos de investigaciones cuantitativas.
+e) Etica de la investigación social
+f) Ciencia abierta
+
+## Segunda unidad. El proceso de medición y operacionalización
+
+a) Usos, limitaciones y potencialidades de la medición en ciencias sociales y sociología.
+b) Proceso y concepto de medición. Tipos y niveles de medición.
+c) Definición conceptual, real y operacional.
+d) Diseño de indicadores.
+e) Confiabilidad y validez
+
+## Tercera unidad. Encuestas: implementación y reporte.
+
+a) La investigación por encuestas e investigación con cuestionarios: usos, potencialidades y limitaciones.
+b) Diseño de encuestas y  formas de aplicación
+c) Proceso de documentación de estudios sociales
+d) Reporte de resultados.
+
+# Metodología
+
+Clases teóricas expositivas desarrolladas por el profesor del curso.
+Talleres prácticos grupales (dentro y fuera de la sala de clases) de aplicación de contenidos del curso a situaciones de investigación ficticia o simulada, similares a las que se encuentran en investigación cuantitativa en sociología.
+Lecturas y estudio individual semanal de parte de las y los estudiantes. Recuerde que este curso contempla un total de 6 horas de trabajo individual semanal adicional a las horas de clases, el cual debe ser usado para el estudio individual, lectura de la bibliografía obligatoria y desarrollo de tareas.
+Sesiones de ayudantía en pequeños grupos que estarán a cargo de un ayudante de cátedra y tendrán por objetivo aclarar dudas de parte de los estudiantes sobre los contenidos de cátedra o tener apoyo de reforzamiento de los contenidos de ésta. Las ayudantías no tienen un horario ni frecuencia predefinida, sino que serán realizadas conforme los estudiantes lo requieran en horarios definidos de común acuerdo con el ayudante a cargo del grupo.
+
+# Evaluación
+
+La evaluación de los aprendizajes del curso será evaluada a través de:
+
+- Unidad 1: prueba escrita (20%)
+- Unidad 2:
+	- informe evaluación de reporte/artículo de investigación (10)
+	- reporte diseño de instrumento de medición (30%)
+- Unidad 3:
+	- reporte evaluación de pares (10%)
+	- informe final trabajo (30%)
+
+El atraso o la inasistencia asociada a la entrega de evaluaciones debe ser justificada a la secretaría de la carrera (no se aceptan justificaciones directas).  Quienes cuenten con justificación por haber faltado a alguna evaluación, tendrán la oportunidad de dar una evaluación en un nuevo plazo. De no cumplir este requisito para el caso de las entregas, se descontará 1 punto por día de atraso, con un máximo de dos días; de otra manera se asignará la nota mínima.
+
+La sumatoria ponderada de los resultados de sus evaluaciones será su nota de presentación a examen. Podrán eximirse del examen todas aquellas personas que tengan un promedio ponderado igual o superior a 5.5 (en escala de 1.0 a 7.0). Podrán presentarse a examen de primera oportunidad todas aquellas personas que tengan un promedio ponderado igual o superior a 3.5 (en escala de 1.0 a 7.0). En caso de tener un promedio inferior a 3.5 (en escala de 1.0 a 7.0) deberá presentarse a examen de segunda oportunidad. En caso de que deba presentarse a examen, su promedio ponderado de notas del semestre equivaldrá al 60% de su nota de presentación y el examen al 40% restante. El examen será oral.
+
+El examen de segunda oportunidad (solo para quienes no hubiesen aprobado el curso en instancias previas) será una prueba escrita donde se medirán todos los contenidos del curso.
+
+# Software
+
+The main tools we will be working with are R, [R Studio](rstudio.com), [git](https://git-scm.com/), and [GitHub](https://git-scm.com/). There are other things, too, such as the shell (or console, or command line, or Terminal), some handy Unix utilities, text editors, and assorted miscellaneous applications. But to begin with, make sure you have R, R Studio, and git installed, along with access to GitHub.
+
+Here is what to do to get R an R Studio:
+
+1. Get the most recent version of R. R is free and available for Windows, Mac, and Linux operating systems. Download^[`cloud.r-project.org`] the version of R compatible with your operating system. If you are running Windows or MacOS, you should choose one of the *precompiled binary* distributions (i.e., ready-to-run applications) linked at the top of the R Project's webpage.
+2. Once^[`rstudio.com`] R is installed, download and install R Studio. R Studio is an "Integrated Development Environment", or IDE. This means it is a front-end for R that makes it much easier to work with. R Studio is also free, and available for Windows, Mac, and Linux platforms.
+3. Install^[`tidyverse.org`] the tidyverse library and several other add-on packages for R. These libraries provide useful functionality that we will take advantage of throughout the book. You can learn more about the tidyverse's family of packages at its website.
+
+   To install the tidyverse, make sure you have an Internet connection and then launch R Studio. Type the following lines of code at R's command prompt, located in the window named "Console", and hit return. In the code below, the `<-` arrow is made up of two keystrokes, first `<` and then the short dash or minus symbol, `-`.
+
+```{r, echo=TRUE, eval=FALSE, tidy = FALSE}
+my_packages <- c("tidyverse", "broom", "devtools")
+
+install.packages(my_packages, repos = "http://cran.rstudio.com")
+```
+
+R Studio should then download and install these packages for you. It may take a little while to download everything.
+
+To get git and GitHub up and running, consult Jenny Bryan et al's extremely useful [Happy Git with R](https://happygitwithr.com) and follow the instructions there.
+
+
+# Varios
+
+Las clases en general se acompañan de documentos de presentación, que estarán disponibles antes de la sesión en la página [sesiones](/schedule/), y están desarrollados con base en Rmarkdown/Xaringan ^[[`Rmarkdown/ Xaringan`](https://github.com/yihui/xaringan)] . Estos documentos no son:
+
+-. "la clase"
+
+-. autoexplicativos (ni aspiran a serlo)
+
+-. "el ppt" (ni mucho menos "la ppt")
