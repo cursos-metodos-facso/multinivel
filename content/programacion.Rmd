@@ -19,6 +19,6 @@ slug: programacion
 | | | <i class="fas fa-chalkboard-teacher"></i> |<i class="fas fa-book-reader"></i> | <i class="fas fa-user-edit"></i> |
 |----- | -- |-----------------|-------------------------- |-------------|
 | Agosto | 6  | [**Introducción**](../docpres/01_intro/1mlmintro.html)   | [Coleman 1986](../readings/coleman1986.pdf)  | |
-|        | 13 |    |      | |
+|        | 13 | [**Bases**](../docpres/02_bases/2mlmbases.html)   |  [Finch cap. 1, 2 & 3](../readings/finch_etal 2014cap123.pdf)    | [Práctica A: Bases](../practicas/a_introreg/a_introreg.html) |
 |        | 20 |     |      |  |
 |        | 27  |   |   |    |

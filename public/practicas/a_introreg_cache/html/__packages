@@ -1,0 +1,11 @@
+base
+knitr
+RefManageR
+foreign
+carData
+car
+dplyr
+stargazer
+Matrix
+lme4
+haven

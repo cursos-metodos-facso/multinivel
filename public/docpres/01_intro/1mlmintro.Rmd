@@ -55,7 +55,8 @@ About macros.js: permite escalar las imágenes como [scale 50%](path to image), 
 ### Juan Carlos Castillo
 ### Sociología FACSO - UChile
 ### 2do Sem 2019
-### [multinivel.netlify.com](https://multinivel.netlify.com/)
+### [multinivel.netlify.com](https://multinivel.netlify.com])
+
 <br>
 
 ## Sesión 1: Introducción
@@ -104,7 +105,7 @@ class: middle, center, roja
 ## 3.  Aplicación
 
 
-Detalles en [https://multinivel.netlify.com/](https://multinivel.netlify.com/)
+Detalles en [https://multinivel.netlify.com/](https://multinivel.netlify.com)
 
 
 ---
