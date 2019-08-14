@@ -3,4 +3,10 @@ title: "Links"
 slug: links
 ---
 
-(Aquí mayor detalle de links)
+
+# R, software y otros
+
+- [breve introducción a R](../practicas/breveintroR/breveintroR.html)
+- [Manual de R de Boccardo & Ruiz](https://bookdown.org/gboccardo/manual-ED-UCH/)
+- [R para ciencia de datos](https://es.r4ds.hadley.nz/)
+
