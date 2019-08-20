@@ -5,7 +5,7 @@ slug: links
 
 # Ejemplo de bases de datos para trabajos
 
-- [World Values Survey](http://www.worldvaluessurvey.orgma)
+- [World Values Survey](http://www.worldvaluessurvey.org)
 - [International Social Survey Programm](http://issp.org/menu-top/home/)
 - [LAPOP - Latin American Public Opinion Project](https://www.vanderbilt.edu/lapop-espanol/)
 - [Latinobarómetro](http://www.latinobarometro.org/lat.jsp)
