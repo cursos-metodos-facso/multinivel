@@ -3,10 +3,17 @@ title: "Links"
 slug: links
 ---
 
+# Ejemplo de bases de datos para trabajos
+
+- [World Values Survey](http://www.worldvaluessurvey.orgma)
+- [International Social Survey Programm](http://issp.org/menu-top/home/)
+- [LAPOP - Latin American Public Opinion Project](https://www.vanderbilt.edu/lapop-espanol/)
+- [Latinobarómetro](http://www.latinobarometro.org/lat.jsp)
+- [Estudios educacionales internacionales](https://www.agenciaeducacion.cl/estudios/estudios-internacionales/estudios-desarrollados/)
+
 
 # R, software y otros
 
-- [breve introducción a R](../practicas/breveintroR/breveintroR.html)
+- [Breve introducción a R](../practicas/breveintroR/breveintroR.html)
 - [Manual de R de Boccardo & Ruiz](https://bookdown.org/gboccardo/manual-ED-UCH/)
 - [R para ciencia de datos](https://es.r4ds.hadley.nz/)
-

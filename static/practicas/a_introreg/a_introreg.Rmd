@@ -21,7 +21,6 @@ knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
 ```{r}
 pacman::p_load(
 haven,  # lectura de datos formato externo
-car, # función scatterplot y otras de manejo de datos
 corrplot, # correlaciones
 dplyr, # varios gestión de datos
 stargazer, # tablas
