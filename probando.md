@@ -34,7 +34,7 @@ sudo mv pandoc-sidenote /usr/local/bin
 - To render website
 
   - Open R in project terminal
-  blogdown::build_site(local = FALSE, method = c("html", "custom"),run_hugo = TRUE)
+  blogdown::build_site(local = FALSE, method = c("html", "custom"),run_hugo = TRUE) 
   - blogdown:::serve_site()
   - automáticamente abre browser con sitio
   - A veces no rinde a la primera ... y se ve solo el footer; intentar de nuevo
