@@ -1,0 +1,14 @@
+base
+Matrix
+lme4
+reghelper
+haven
+stargazer
+ggplot2
+dplyr
+texreg
+knitr
+RefManageR
+carData
+car
+corrplot

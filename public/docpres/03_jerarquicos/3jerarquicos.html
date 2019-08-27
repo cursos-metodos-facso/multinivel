@@ -508,7 +508,6 @@ class: middle
 ## Varianzas
 
 
-
 ```r
 var_tot = var (mlm$mathach)
 var_entre= var (agg_mlm$mathach)
@@ -542,11 +541,18 @@ var_entre/var_tot
 ```
 
 ---
+# Varianzas
+
+![](images/var_pred.png)
+
+
+---
 class: roja, middle, center
 
 # Correlación intra-clase
 
 ## "Proporción de la varianza de la variable dependiente que se asocia a la pertenencia a unidades de nivel 2"
+
 
 ---
 class: right
@@ -560,7 +566,7 @@ class: right
 ### - Anticipa el posible efecto de predictores de nivel 2 (poca varianza, poco que explicar)
 
 ---
-class: inverse, right
+class: inverse
 
 # RESUMEN
 
@@ -568,7 +574,11 @@ class: inverse, right
 
 - Modelo multinivel: ajusta los efectos y errores según el nivel del predictor
 
-- Descomposición de la varianza: permite obtener la proporción de la variable dependiente que se asocia a la pertenencia a unidades de nivel 2 (correlación intra-clase)
+- Descomposición de la varianza: 
+
+  - permite obtener la proporción de la variable dependiente que se asocia a la pertenencia a unidades de nivel 2 (correlación intra-clase)
+  
+  - base de modelo multinivel: cada predictor se ajusta según su nivel a la varianza correspondiente de la dependiente
 
 ---
 class: inverse, middle, center

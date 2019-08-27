@@ -1,0 +1,10 @@
+base
+pacman
+Matrix
+lme4
+reghelper
+haven
+stargazer
+ggplot2
+dplyr
+texreg
