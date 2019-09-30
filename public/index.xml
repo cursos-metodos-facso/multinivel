@@ -80,5 +80,15 @@
       <description> (pendiente) </description>
     </item>
     
+    <item>
+      <title>Trabajos</title>
+      <link>/trabajos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/trabajos/</guid>
+      <description>Grupos de trabajo  Grupo 1: Migracion y vivienda en chile: Un estudio de los determinantes de los costos de arriendo en 2017 Martín Venegas, Andreas Lafferte, Diego Esturillo &amp;amp; Jan Dimter
+Existe un consenso generalizado en la literatura sobre la desactualización e ineficacia de la política de regularización migratoria del país, la cual no tiene la capacidad de hacer frente a los flujos migratorios del contexto actual. Dicha situación tiene un impacto en las condiciones de vida de la población migrante en distintas fases del proceso de migración: llegada al país, permanencia en el país y salida del país.</description>
+    </item>
+    
   </channel>
 </rss>
