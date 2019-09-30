@@ -210,3 +210,23 @@ Para el análisis multinivel se trabajará a nivel países utilizará la diferen
 - Hipótesis (multinivel):   La hipótesis que se planteará es que los paises de América del Sur que presentan mayor desconfianza hacia el sistema político son aquellos que presentan mayores casos de corrupción de las autoridades y menores índices de satisfacción personal.
 
 - Principales variables: Satisfacción con la democracia (dependiente), Percepción de la corrupción política, Satisfacción personal, País, Sexo y Edad.
+
+# Grupo 11: ¿Qué peso tiene lo organizacional y económico en la ocurrencia de las huelgas extralegales en Chile?: Un análisis regional
+
+**Valentina Andrade, Matías Montero y Carlos Budnevich**
+
+Las huelgas laborales permiten dar cuenta del grado de conflictividad entre trabajadores y empleadores (Burawoy, 1981). En general, estas provienen del fracaso de una negociación colectiva que es, una instancia reglada por las leyes laborales que intenta generar acuerdos sobre algunas condiciones de trabajo y empleo. Si la negociación no llega a su objetivo, los trabajadores votan dos opciones: se acepta la última oferta del empleador o se comenzará con una huelga. Pero esta no es la única opción. En contextos donde la institucionalidad laboral es altamente restrictiva como en Chile (Waas, 2012) se ha podido evidenciar el aumento de huelgas fuera de la ley (Armstrong & Águila, 2006) o extra-legales (Medel, Pérez, Velásquez, & Morales, 2017; OHL, 2017).
+
+En Chile, estas transformaciones han provocado que el estudio de la huelga se haya vuelto relevante: desde investigaciones que reconstruyen el conflicto laboral (Armstrong & Águila, 2006), describen el último ciclo huelgístico (Aravena & Núñez, 2009), su relación en el contexto neoliberal (Aguilar & Henríquez, 2017; Gaudichaud, 2015), los resultados de las huelgas (Ratto, 2017), las dinámicas de la huelga legal (Gutiérrez Crocco, 2017) y extra-legal (Pérez, Medel, & Velásquez, 2015). Sin embargo, a diferencia de la literatura internacional (Franzosi, 1989; Jansen, Akkerman, & Vandaele, 2017; Kelly, 2012), poco se ha debatido sobre los factores que explican la incidencia de la huelga. Un esfuerzo ha sido el de Medel y Pérez (2017), quienes abordan como ciertas características del régimen de trabajo y de la organización sindical se asocian con las huelgas extra-legales, relegando el peso de la economía que hasta entonces había tenido (Hyman, 1989).
+
+La investigación a desarrollar busca debatir sobre los factores que inciden en las ocurrencia de las huelgas extra-legales. Con la particularidad, como ha propuesto Franzosi (2006), de considerar aspectos contextuales de donde ocurre la huelga como el lugar geográfico. Así, distintos estudios cuantitativos sobre las huelgas han mostrado que los ciclos de protesta laboral tienen cierta regularidad y prominencia según el lugar (e.g., país, región) (Jansen, 2014). En consecuencia, la presente investigación buscará evaluar la relación entre factores empresa, con predictores como el tipo de organización sindical, tamaño del sindicato, número de trabajadores involucrados en la huelga, tamaño de la empresa; a nivel de las regiones, con predictores como tasa de sindicalización, presencia de federaciones y centrales, desempleo, inflación y PIB de la región. Para poner a prueba empíricamente rasgos individuales y contextuales de manera simultánea, proponemos realizar un modelo de regresión logística multinivel empleando los datos del Observatorio de Huelgas Laborales (2017), a modo de dilucidar diferencias vinculadas a factores contextuales del territorio o región, junto con las variables a nivel empresa esbozadas anteriormente.
+
+Hipótesis
+
+H1: La presencia del sindicato a nivel de la empresa se asocia negativamente con la
+probabilidad de ocurrencia de una huelga extra-legal
+
+H2: Existe una asociación positiva entre la inflación de la región y la probabilidad de ocurrencia de una huelga extralegal
+
+H3: La relación positiva entre tamaño de empresa y ocurrencia de huelga extralegal es
+moderada negativamente por la tasa de sindicalización de la región.
