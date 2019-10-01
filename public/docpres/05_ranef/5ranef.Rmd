@@ -127,7 +127,7 @@ class: roja, middle, center
 
 ---
 # Pasos (usuales) en la estimación del modelo
- 
+
  0  Modelo nulo
 
 1.  Modelo con variables individuales
@@ -227,14 +227,17 @@ class: roja, middle, center
 
 
 ---
-# Modelo con coeficienes aleatorios
+# Modelo con coeficientes aleatorios
 
 -   A partir de la estimación del modelo, es posible predecir el valor
     de los efectos aleatorios ( $\mu$ ) para cada unidad de nivel 2
 
 -   Para el intercepto: $\mu_{01},\mu_{02},\mu_{03} ... \mu_{0N}$
 
--   Para la pendiente: $\mu_{11},\mu_{12},\mu_{13} ... \mu_{1N}$
+-   Para la pendiente $\gamma_{10}$ : $\mu_{11},\mu_{12},\mu_{13} ... \mu_{1N}$
+
+-   Para la pendiente $\gamma_{20}$ : $\mu_{21},\mu_{22},\mu_{23} ... \mu_{2N}$
+
 
 ---
 ## Notas sobre estimación
@@ -387,6 +390,3 @@ class: inverse, bottom
 ### 2do Sem 2019
 ### [multinivel.netlify.com](https://multinivel.netlify.com)
 ]
-
-
-

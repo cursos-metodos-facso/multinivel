@@ -22,3 +22,5 @@ slug: links
 - [Breve introducción a R](../practicas/breveintroR/breveintroR.html)
 - [Manual de R de Boccardo & Ruiz](https://bookdown.org/gboccardo/manual-ED-UCH/)
 - [R para ciencia de datos](https://es.r4ds.hadley.nz/)
+- [Hoja resumen Rmarkdown (cheatsheet)](https://rstudio.com/wp-content/uploads/2015/03/rmarkdown-spanish.pdf)
+- [Guía de documentos dinámicos](https://juancarloscastillo.github.io/metsoc-facsouchile/documents/trabajos/guia_rep_dinamico/reportedinamico.html)

@@ -1,9 +1,9 @@
 ---
 title: "Trabajos"
-slug: Trabajos
+output:
+  blogdown::html_page:
+    toc: true
 ---
-
-# Grupos de trabajo
 
 <hr>
 
