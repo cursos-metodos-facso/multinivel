@@ -99,14 +99,16 @@ b) Sobre cumplimiento de objetivos: luego del curso, me considero capaz de:
 
 c) Considerando todo lo anterior, ¿qué nota final consideraría justa para mí en este curso?
 
-Recordando fechas importantes
+Recordando fechas importantes (actualizadas post-paralización)
 =============================
 
--   3 Septiembre: propuesta de tema del trabajo (resumen app. 200 palabras)
+-   1 Octubre: propuesta de tema del trabajo (resumen app. 200 palabras)
 
--   24 Septiembre: primera entrega y ronda de presentaciones breves
+-   8 Octubre: ronda de presentaciones breves
 
-- 15 Octubre: asesoría trabajos
+- 11 Octubre: primera entrega
+
+- 22 Octubre: asesoría trabajos
 
 - 12 / 19 Noviembre: presentaciones orales
 
@@ -114,4 +116,4 @@ Recordando fechas importantes
 
 - 26 Noviembre: entrega informe evaluación pares y autoevaluación
 
-Normas generales de entregas: hasta las 17:00 del dı́a indicado, via Ucursos, - 0.5 por dı́a de atraso, hasta 3 dı́as. Se entrega documento de trabajo y también código de análisis. En caso de atraso por enfermedad, avisar y presentar certificado médico a secretarı́a de carrera. En el marco de ciencia abierta que promueve el curso, los documentos del trabajo, código y presentaciones serán puestos a disposición de todos los participantes.
+Normas generales de entregas: hasta las 23:59:00 del dı́a indicado, via Ucursos, - 0.5 por dı́a corrido de atraso, hasta 3 dı́as. Se entrega documento de trabajo y también código de análisis. En caso de atraso por enfermedad, avisar y presentar certificado médico a secretarı́a de carrera. En el marco de ciencia abierta que promueve el curso, los documentos del trabajo, código y presentaciones serán puestos a disposición de todos los participantes.
