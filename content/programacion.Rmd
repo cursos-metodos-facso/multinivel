@@ -30,5 +30,5 @@ slug: programacion
 |              |   |    |   |  |
 | Octubre   | 1  | [Ajuste y Reporte](../docpres/06_fitreport/6fitrep.html)   | [O’Conell & McCoach 7, Evaluating model fit and adequacy](../readings/OConnellchap7.pdf)   | [Practica D: Integración datos L2](../practicas/d_datosL2.html)  |
 |   |   |   |    [O’Conell & McCoach 11, Reporting results from multilevel](../readings/OConnellchap8.pdf)   |   |
-|   | 8  | Ronda de presentaciones grupales   |   | [Práctica E: Ajuste y reporte](../practicas/e_ajuste-reporte.html)  |
-|   | 15  | [Interacción entre niveles](../docpres/07_interacciones/7interacciones.html)  | [Aguinis et al (2013) Best practices MLM interactions](../readings/Aguinis2014.pdf)  | [Práctica F: Interacciones entre niveles](https://multinivel.netlify.com/practicas/f_interaccion.html)   |
+|   | 8  | Ronda de presentaciones grupales   |   | [Práctica E: Ajuste y reporte](https://multinivel.netlify.com/practicas/e_ajustereporte.html)  |
+|   | 15  | [Interacción entre niveles](../docpres/07_interacciones/7interacciones.html)  | [Aguinis et al (2013) Best practices MLM interactions](../readings/aguinis2013crosslevel.pdf)  | [Práctica F: Interacciones entre niveles](https://multinivel.netlify.com/practicas/f_interaccion.html)   |

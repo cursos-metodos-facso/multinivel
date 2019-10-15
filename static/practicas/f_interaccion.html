@@ -1716,7 +1716,7 @@ div.tocify {
 </ol>
 <div id="datos-1" class="section level2">
 <h2><span class="header-section-number">2.1</span> Datos</h2>
-<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" title="1">exdata=<span class="kw">read.csv</span>(<span class="st">&quot;data/aguinis_JOM.csv&quot;</span>, <span class="dt">header =</span> <span class="ot">TRUE</span>, <span class="dt">sep =</span> <span class="st">&quot;,&quot;</span>)</a>
+<div class="sourceCode" id="cb15"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb15-1" title="1">exdata=<span class="kw">read.csv</span>(<span class="st">&quot;https://multinivel.netlify.com/practicas/data/aguinis_JOM.csv&quot;</span>, <span class="dt">header =</span> <span class="ot">TRUE</span>, <span class="dt">sep =</span> <span class="st">&quot;,&quot;</span>)</a>
 <a class="sourceLine" id="cb15-2" title="2"><span class="kw">stargazer</span>(exdata, <span class="dt">type =</span> <span class="st">&quot;text&quot;</span>)</a></code></pre></div>
 <pre><code>## 
 ## ==============================================================
@@ -1752,7 +1752,7 @@ div.tocify {
 <ul>
 <li>Modelo Nulo e ICC</li>
 </ul>
-<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb18-1" title="1">lmm.fit1=<span class="kw">lmer</span>(Y <span class="op">~</span><span class="st"> </span><span class="dv">1</span> <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>l2id), <span class="dt">data=</span>exdata,<span class="dt">REML=</span>F) </a>
+<div class="sourceCode" id="cb18"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb18-1" title="1">lmm.fit1=<span class="kw">lmer</span>(Y <span class="op">~</span><span class="st"> </span><span class="dv">1</span> <span class="op">+</span><span class="st"> </span>(<span class="dv">1</span><span class="op">|</span>l2id), <span class="dt">data=</span>exdata,<span class="dt">REML=</span>F)</a>
 <a class="sourceLine" id="cb18-2" title="2"><span class="kw">summary</span>(lmm.fit1)</a></code></pre></div>
 <pre><code>## Linear mixed model fit by maximum likelihood  [&#39;lmerMod&#39;]
 ## Formula: Y ~ 1 + (1 | l2id)
@@ -1906,9 +1906,9 @@ div.tocify {
 ## =============================================================================
 ## *** p &lt; 0.001, ** p &lt; 0.01, * p &lt; 0.05</code></pre>
 <p>En html</p>
-<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb32-1" title="1"><span class="kw">htmlreg</span>(<span class="kw">list</span>(lmm.fit1, lmm.fit2, lmm.fit3, lmm.fit4), </a>
-<a class="sourceLine" id="cb32-2" title="2">    <span class="dt">custom.model.names =</span> <span class="kw">c</span>(<span class="st">&quot;Nulo&quot;</span>,<span class="st">&quot;Pendiente &lt;br&gt; fija&quot;</span>,<span class="st">&quot;Pendiente &lt;br&gt; Aleatoria&quot;</span>, <span class="st">&quot;Interacción&quot;),    </span></a>
-<a class="sourceLine" id="cb32-3" title="3"><span class="st">    custom.coef.names = c(&quot;</span>Intercepto<span class="st">&quot;, &quot;</span>LMX <span class="op">$</span>(\\gamma_{<span class="dv">10</span>})<span class="op">$</span><span class="st">&quot; ,&quot;</span>Clima liderazgo <span class="op">$</span>(\\gamma_{<span class="dv">01</span>})<span class="op">$</span><span class="st">&quot;, &quot;</span>LMX<span class="op">*</span>Clima <span class="op">$</span>(\\gamma_{<span class="dv">11</span>})<span class="op">$</span><span class="st">&quot;), </span></a>
+<div class="sourceCode" id="cb32"><pre class="sourceCode r"><code class="sourceCode r"><a class="sourceLine" id="cb32-1" title="1"><span class="kw">htmlreg</span>(<span class="kw">list</span>(lmm.fit1, lmm.fit2, lmm.fit3, lmm.fit4),</a>
+<a class="sourceLine" id="cb32-2" title="2">    <span class="dt">custom.model.names =</span> <span class="kw">c</span>(<span class="st">&quot;Nulo&quot;</span>,<span class="st">&quot;Pendiente &lt;br&gt; fija&quot;</span>,<span class="st">&quot;Pendiente &lt;br&gt; Aleatoria&quot;</span>, <span class="st">&quot;Interacción&quot;),</span></a>
+<a class="sourceLine" id="cb32-3" title="3"><span class="st">    custom.coef.names = c(&quot;</span>Intercepto<span class="st">&quot;, &quot;</span>LMX <span class="op">$</span>(\\gamma_{<span class="dv">10</span>})<span class="op">$</span><span class="st">&quot; ,&quot;</span>Clima liderazgo <span class="op">$</span>(\\gamma_{<span class="dv">01</span>})<span class="op">$</span><span class="st">&quot;, &quot;</span>LMX<span class="op">*</span>Clima <span class="op">$</span>(\\gamma_{<span class="dv">11</span>})<span class="op">$</span><span class="st">&quot;),</span></a>
 <a class="sourceLine" id="cb32-4" title="4"><span class="st">    custom.gof.names=c(NA,NA,NA,NA,NA,</span></a>
 <a class="sourceLine" id="cb32-5" title="5"><span class="st">                   &quot;</span>Var<span class="op">:</span><span class="st"> </span><span class="kw">l2id</span> (<span class="op">$</span>\\tau_{<span class="dv">00</span>}<span class="op">$</span>)<span class="st">&quot;,</span></a>
 <a class="sourceLine" id="cb32-6" title="6"><span class="st">                   &quot;</span>Var<span class="op">:</span><span class="st"> </span><span class="kw">Residual</span> (<span class="op">$</span>\\sigma<span class="op">^</span><span class="dv">2</span><span class="op">$</span>)<span class="st">&quot;,</span></a>
