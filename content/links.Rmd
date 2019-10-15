@@ -18,6 +18,7 @@ slug: links
 
 # R, software y otros
 
+- [Ejemplos análisis y visualización con lme4](https://www.rensvandeschoot.com/tutorials/lme4/) 
 - Libro [AnalizaR datos políticos](https://arcruz0.github.io/libroadp/index.html)
 - [Breve introducción a R](../practicas/breveintroR/breveintroR.html)
 - [Manual de R de Boccardo & Ruiz](https://bookdown.org/gboccardo/manual-ED-UCH/)

@@ -1,0 +1,8 @@
+base
+Matrix
+lme4
+haven
+stargazer
+texreg
+sjPlot
+dplyr

@@ -25,7 +25,7 @@ class: bottom, right, inverse
 ```{r eval=FALSE, include=FALSE}
 # Correr esto para que funcione el infinite moonreader, el root folder debe ser static para si dirigir solo "bajando" en directorios hacia el bib y otros
 
-xaringan::inf_mr('/static/docpres/06_fit&report/6fitrep.Rmd')
+xaringan::inf_mr('static/docpres/07_intercenter/7inter_center.html')
 ```
 
 ```{r setup, include=FALSE, cache = FALSE}
