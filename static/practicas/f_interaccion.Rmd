@@ -85,7 +85,7 @@ plot_model(reg_mlm3c, type = "int")
 
 # Ejemplo Aguinis
 
-- Link a paper [aquí](../readings/Aguinis2014.pdf)
+- Link a paper [aquí](https://multinivel.netlify.com/readings/aguinis2013crosslevel.pdf)
 
 - Planteamiento general:
 
