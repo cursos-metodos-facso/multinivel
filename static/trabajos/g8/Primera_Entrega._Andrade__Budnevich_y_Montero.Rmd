@@ -1,0 +1,201 @@
+---
+title: "¿Qué peso tiene lo organizacional y económico en la ocurrencia de las huelgas extra-legales en Chile?: un análisis regional"
+author: "Valentina Andrade, Carlos Budnevich, Matías Montero"
+date: "13-10-2019"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+## Abstract
+
+Uno de los elementos principales a partir del cual se pueda examinar la conflictividad laboral son las huelgas de trabajadores. Asimismo, resulta ser uno de los mecanismos más usuales que pueden utilizar los trabajadores para defender sus intereses frente a sus empleadores. El carácter que asumen las huelgas puede ser legal o extra legal, siendo las primeras un objeto de estudio ampliamente trabajado por la literatura en la medida que tienen una mayor frecuencia. No obstante, en contextos como Chile, donde la institucionalidad laboral es altamente restrictiva, las huelgas extra legales se vuelven más frecuentes y, por ende, relevantes (R. Medel, Pérez, Velásquez, & Morales, 2017; OHL, 2017). La literatura aún no ha explorado con profundidad las diferentes aristas que explican la ocurrencia de una huelga extra legal, de forma que este artículo tiene por objetivo dilucidar el peso que tienen variables económicas y organizacionales en que la ocurrencia de una huelga extra legal, tanto a nivel de la empresa como de la región donde se desenvuelve. Se trabajará con los datos del Observatorio de Huelgas Laborales del año 2017, contando con un total de 325 huelgas ese año en las 15 regiones del país (variable cluster o nivel 2). Los resultados arrojan que la ocurrencia de las huelgas extra-legales se vincula con la región en la que esta ocurre, no obstante, las variables económicas y organizacionales incluidas no logran dar cuenta de esta dependencia geográfica.
+
+## Introducción
+
+El concepto de huelga, en términos generales, se entiende como “toda disrupción deliberada del proceso de trabajo, organizada por un grupo de trabajadores para el logro de una reivindicación común” (OHL, 2017, p.1). Asimismo, este término cuenta con ciertas ramificaciones. Por un lado, están las huelgas que se clasifican como legales y, por otro, aquellas que son categorizadas como extralegales. 
+
+Mientras las primeras ocurren en el marco de negociaciones colectivas regladas, las segundas se dan en contextos en los cuales no hay un apego a las reglas de la normativa vigente (lo cual no implica, necesariamente, que sean ilegales) (OHL, 2017).
+Este trabajo se centra, particularmente, en las huelgas laborales las cuales permiten dar cuenta del grado de conflictividad entre trabajadores y empleadores (Burawoy, 1989). En general, estas provienen del fracaso de una negociación colectiva. Estas, consisten en una instancia reglada por las leyes laborales que intenta generar acuerdos sobre algunas condiciones de trabajo y empleo. Si la negociación no llega a su objetivo, los trabajadores votan dos opciones: se acepta la última oferta del empleador o se comienza con una huelga. No obstante,  esta no es la única opción. 
+
+En contextos donde la institucionalidad laboral es altamente restrictiva como en Chile (Waas, 2012) se ha podido evidenciar una alta ocurrencia de huelgas fuera de la ley (Armstrong & Águila, 2006) o extra-legales (R. Medel, Pérez, Velásquez, & Morales, 2017; OHL, 2017), que escapan al marco en el cual se desarrollan las huelgas legales.
+En  Chile, estas transformaciones han provocado que el estudio de la huelga se haya vuelto relevante. De esta forma, es posible encontrar investigaciones que reconstruyen el conflicto laboral (Armstrong & Águila, 2006), describen el último ciclo huelgístico (Aravena & Núñez, 2009), su relación con el contexto neoliberal (Aguilar & Henríquez, 2017; Gaudichaud, 2015), los resultados de las huelgas (Ratto, 2017), las dinámicas de la huelga legal (Gutiérrez Crocco, 2017) y el estudio de huelgas extra-legales, materia de interés del presente artículo (Pérez, Medel, & Velásquez, 2015).
+
+A diferencia de la literatura internacional (Franzosi, 1989; Jansen, Akkerman, & Vandaele, 2017; Kelly, 2012), poco se ha debatido en nuestro país sobre los factores que explican la incidencia de la huelga tanto legal como extra-legal. Un esfuerzo ha sido el realizado por Medel y Pérez (2017), quienes abordan cómo ciertas características del régimen de trabajo y de la organización sindical se asocian con las huelgas extra-legales. Sus resultados relegan el peso de la economía (variables como PIB y tasa de desempleo) en la incidencia de huelgas extra-legales, marcando una diferencia importante con las investigaciones que hasta entonces la habían considerado como irrelevante (Hyman, 1989).
+
+La investigación a desarrollar busca debatir estos elementos a partir de la evidencia consignada, en específico, sobre los factores que inciden en las ocurrencia de las huelgas extra-legales. Con la particularidad, como ha propuesto Franzosi (2006), de considerar aspectos contextuales de la empresa en la cual se enmarca la  huelga así como también el lugar geográfico (o región). En esa línea, distintos estudios cuantitativos sobre las huelgas han mostrado que los ciclos de protesta laboral tienen cierta regularidad y prominencia según el lugar (e.g., país, región) (Jansen, 2014), lo cual torna relevante el estudio de las huelgas considerando el factor regional.
+
+Akkerman (2008) muestra una la relación positiva entre la actividad huelgística y factores organizacionales, tanto a nivel empresa (tamaño del sindicato) y nacional (número de sindicatos). A su vez, los factores económicos como desempleo y PIB sólo tienen un impacto  significativo a nivel nacional, mientras que tamaño de la empresa u otras no son relevantes. En este artículo procuraremos evaluar la influencia del PIB y el desempleo en la huelga extra legal, a nivel regional, no sólo nacional como ya lo ha realizado la literatura.
+
+Otros análisis multinivel de la incidencia de huelgas en general, como el de Alemán (2008), muestran tendencias similares donde lo organizacional tiene peso a nivel de las firmas y nacional, pero no así lo económico. 
+
+Por su parte, la investigación de  Medel y Pérez (2017) aun cuando incluyen numerosas variables para el estudio de la huelga, obvian algunos elementos contextuales como, por ejemplo, los ciclos económicos, en cuanto al efecto que tienen en la ocurrencia de una huelga extra legal. De esta forma, esta investigación viene a llenar algunos vacíos investigativos  en el campo de estudio del conflicto laboral.
+
+La literatura específica sobre las huelgas plantea que es más probable la ocurrencia de una huelga legal en escenarios donde hay más desempleo y PIB más bajos debido a que las condiciones económicas desfavorables preferirán negociarse en marcos legales (Paldam & Pedersen, 1982; Snyder, 1975). Por consiguiente, las primeras dos hipótesis a abordar serán:
+
+*H<sub>1</sub>: Una mayor tasa de desempleo de la región se asocia a una menor probabilidad de ocurrencia de una huelga extralega*
+
+*H<sub>2</sub>: Un menor PIB regional se asocia a una menor probabilidad de ocurrencia de una huelga extra legal.*
+
+Kaufmann (1982) demuestra que estos factores económicos se vinculan con otros organizacionales, como la afiliación sindical y presencia sindical. Las teorías de la movilización de Tilly (1974) pusieron el énfasis solo en los factores organizacionales, formalizando que hay una relación positiva entre afiliación/presencia sindical y ocurrencia de huelgas, pero no así extralegales. También, Kelly (2012) planteará que aspectos como la presencia de un sindicato junto con una percepción de injusticia en el trabajo propician huelgas, pero dentro de los marcos legales. En consecuencia, es esperable que, tanto a nivel nacional como de las firmas, la presencia de una organización sindical en el contexto de la huelga está asociada a bajos niveles de conflictividad laboral extra-legal, en la medida que la existencia del sindicato promueve prácticas sindicales dentro del marco de la ley en detrimento de las huelgas extralegales:
+
+*H<sub>3</sub>: La presencia del sindicato a nivel de la empresa se asocia a una menor probabilidad de ocurrencia de una huelga extra-legal.*
+
+Diversos estudios a nivel internacional (Charlwood & Haynes, 2008) como nacional (Baltera, 2016; Dirección del Trabajo, 2015; OHL, 2017) parecen confirmar la asociación entre concentraciones de trabajadores (grandes empresas) y actividad sindical, como la actividad huelgística legal. Si bien los datos a nivel de empresa indican que en el 81,8% de las empresas nunca ha existido un sindicato (Dirección del Trabajo, 2015), disminuyendo este porcentaje en las Grandes Empresas (30,9%), mientras que aumenta en las pequeñas (88,5%), no se ha abordado la relación que existe a nivel contextual entre la tasa sindicalización y la ocurrencia de huelgas legales y extra-legales. Por ello, se planteará exploratoriamente:
+
+*H<sub>4</sub>: La relación positiva entre tamaño de empresa y ocurrencia de huelga extralegal es moderada  por la tasa de sindicalización de la región.*
+
+En consecuencia, el estudio buscará evaluar la relación entre factores organizacionales y económicos a dos niveles: a nivel de la empresa, con predictores como el tipo de organización sindical, tamaño del sindicato, número de trabajadores involucrados en la huelga, tamaño de la empresa; a nivel de las regiones, con predictores como tasa de sindicalización, desempleo y PIB.
+
+Para poner a prueba empíricamente rasgos a nivel empresa  y a nivel regional de manera simultánea, proponemos realizar un modelo de regresión logística multinivel empleando los datos del Observatorio de Huelgas Laborales (2017), a modo de dilucidar diferencias vinculadas a factores contextuales del territorio o región, junto con las variables a nivel empresa esbozadas anteriormente.
+
+**Objetivo general**
+Estimar el efecto que tienen los factores organizacionales y económicos a nivel de las empresas y regiones, sobre la probabilidad de ocurrencia de las huelgas extra-legales en Chile en 2017.
+
+## Datos, variables y métodos
+
+### Datos
+
+Principalmente, los datos por analizar provienen del *Observatorio de Huelgas Laborales (OHL)*, que es una iniciativa del *Centro de Conflicto y Cohesión Social (COES)* que tiene por objetivo registrar periódicamente las huelgas laborales ocurridas en el país, continuando con el trabajo realizado por Armstrong entre 1979 y 2010. La base contempla información sobre huelgas extralegales en el sector privado, huelgas en el sector público, estrategias sindicales, intervención policial. Se utilizan los datos del 2017, lo que implica un total de 325 huelgas tanto legales como extra-legales.
+
+### Variables
+
+En la *Tabla 1* se describen las variables utilizadas. La variable dependiente es legalidad de la huelga, teniendo la posibilidad de ser legal o extra-legal. Las variables independientes se organizan en dos niveles: a nivel de empresa, las variables organizacionales son el número de trabajadores involucrados en la huelga, presencia de trabajadores subcontratados[^1], y presencia de un sindicato, mientras que la económica es tamaño de la empresa medido en número de trabajadores de la empresa o rango de la empresa en UF. A nivel regional, las variables económicas son desempleo y variación del PIB regional (medido según la variación del PIB que hay comparado con el año inmediatamente anterior), mientras que organizacionales es tasa de sindicalización.
+
+```{r variables, echo=FALSE, out.width='75%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics("tabla1.png")
+```
+
+[^1]:Se incluyeron a trabajadores subcontratados por el peso que han tenido en acciones colectivas extra-legales (Aravena y Núñez, 2009)
+
+### Métodos
+
+Los métodos de análisis buscan estimar un modelo que considere variables a nivel de los lugares de trabajo, las empresas, que es donde ocurren las huelgas y variables del contexto regional donde ocurren estas. Debido a que se busca estimar la probabilidad de ocurrencia de una huelga extra-legal (variable dicotómica), se utilizará un modelo multinivel logístico. Estos modelos permiten observar como las observaciones “individuales” interactúan con el contexto social al cual pertenecen (Hox, Moerbeek, & Van de Schoot, 2017, p. 2). El potencial de los modelos de regresión logística multinivel (MLR) está en la estimación de la probabilidad de ocurrencia (o no) de un fenómeno, dándole un tratamiento adecuado a la variable dependiente dicotómica (Merino, 2017, p. 186).
+
+## Resultados
+
+### Estadísticos descriptivos univariados
+
+Los casos válidos varían entre 139 y 325, correspondientes a rango de empresa y trabajadores involucrados en la huelga, respectivamente. Existe una alta dispersión de los datos en trabajadores involucrados en la huelga y trabajadores de la empresa (SD = 311.65 y SD = 271.18, respectivamente) asociado a los resultados de las medidas de posición que poseen (e.g., trabajadores involucrado tiene P25 = 6 y P75 = 632). En contraste, existe una baja dispersión en trabajadores subcontratados y presencia o ausencia de sindicato (SD = 0.43 y SD = 0.302, respectivamente). Las variables a nivel regional tienden a concentrar sus casos en los valores intermedios, tal como ocurre en el PIB (i.e., M = 7.413, Min = 2, P25 = 5, P75 = 9.5 y Max = 15).
+
+```{r tabla02, echo=FALSE, out.width='75%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics("tabla02.png")
+```
+
+La *Figura 1* ilustra con un diagrama de dispersión la legalidad de la huelga, trabajadores de la empresa y trabajadores involucrados en la huelga. Las huelgas legales tienden a ser en empresas con cerca de 350 trabajadores, mientras que las huelgas extralegales tienden a ser en empresas con cerca de 120 trabajadores.
+
+```{r figura1, echo=FALSE, out.width='75%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics("figura 1.png")
+```
+La *Figura 2* ilustra que una variación del PIB regional y tasa de sindicalización mayor al 12% se vincula a huelgas extralegales. Si el PIB y tasa de sindicalización es menor al 12%, entonces las huelgas tienden a ser legales.
+
+```{r figura2, echo=FALSE, out.width='75%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics("figura02.png")
+```
+
+Por último, la *Figura 3* ilustra una matriz de correlaciones obteniendo ocho correlaciones mayores a 0.2, donde la más alta corresponde a la correlación negativa entre desempleo y PIB (r = -0.38). Además, se obtienen catorce correlaciones menores a 0.1, donde cuatro son insignificantes (r = 0.0). No se estimaron correlaciones con los métodos adecuados (i.e. policóricas, tetracóricas, poliseriales y biseriales), pues interesa conocer las correlaciones de Pearson en vista que el modelo multinivel será estimado sobre una matriz de correlaciones de Pearson.
+
+```{r figura3, echo=FALSE, out.width='75%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics("figura03.png")
+```
+
+### Descripción de los modelos a estimar
+
+Se procede a estimar cuatro modelos: 1) primer modelo con intercepto aleatorio; 2) segundo modelo con variables a nivel empresa; 3) tercer modelo con variables a nivel regional; 4) cuarto modelo con variables a nivel empresa y regional. Todos los modelos estimados son con intercepto aleatorio y pendientes fijas. La figura 4 resume el cuarto modelo final a estimar.
+
+```{r modelo1, echo=FALSE, out.width='75%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics("modelo1.png")
+```
+
+## Modelos multinivel
+
+Los resultados indican la pertinencia de la aplicación de un modelo multinivel, pues se ha obtenido una correlación intraclase mayor a 0.1 (ICC = 0.1818), lo que es un indicio de que existiría una dependencia contextual en los datos según región. En vista que la técnica de análisis empleada en este informe preliminar no es la más adecuada (i.e., regresión multinivel OLS), se procede a interpretar los coeficientes B estimados en términos de asociación, significancia estadística y direccionalidad. De este modo, la magnitud de la relación no es posible determinarla e interpretar correctamente, lo cual se espera reportar en el análisis de resultados del informe final al emplear una regresión logística multinivel.
+
+El *modelo 1* indica el modelo nulo que incluye solo el intercepto, el cual es estadísticamente significativo (B = 1.75, p < 0.01). Esto indicaría que los puntajes en promedio de la muestra se acercan más hacia huelgas extralegales que a huelgas legales.
+Los coeficientes estimados para el modelo a nivel de huelga (modelo 2) indica un efecto estadísticamente significativo en la asociación entre presencia de sindicato y legalidad/extralegalidad de la huelga, donde la presencia de sindicatos tiende a asociarse positivamente a huelgas extralegales, antes que a huelgas legales (B = 0.08, p < 0.01). Los trabajadores subcontratados involucrados y trabajadores de la empresa no se asocian a la legalidad o extralegalidad de la huelga (B = 0.00, p > 0.05), mientras que el rango de la empresa en UF se asocia de manera leve a huelgas legales, pero no es una relación estadísticamente significativa (B = -0.02, p > 0.05).
+
+El *modelo 3* estima los coeficientes de las variables contextuales, en el que es posible observar que el PIB y desempleo no se asocian a la legalidad o extralegalidad de la huelga (B = 0.00, p > 0.05). Para el caso de tasa de sindicalización, existe una asociación negativa y, en consecuencia, tendiente hacia huelgas legales, pero es muy leve y no es estadísticamente significativo (B = -0.01, p > 0.05).
+
+Finalmente, el modelo 4 incluye simultáneamente las variables individuales y contextuales, donde es posible observar una asociación negativa entre presencia de sindicatos y legalidad/extralegalidad de la huelga (B = -0.02, p > 0.05), pero no es estadísticamente significativa. En otras palabras, tendería a asociarse a huelgas legales, indicando una tendencia contraria a los resultados del modelo 2. De manera similar, la asociación entre legalidad de la huelga y el rango de la empresa es positiva y estadísticamente significativo  (B = 0.08, p < 0.001), vinculándose así a huelgas extra-legales antes que a huelgas legales como lo indicaba el modelo 2. Tanto los trabajadores subcontratados involucrados en la huelga como trabajadores de la empresa no se asocian a la legalidad o extralegalidad de la huelga (B = 0.00, p > 0.05).
+
+En la misma tendencia del modelo 3, en el modelo 4 se observa una asociación negativa y, por tanto, tendiente hacia huelgas legales con la tasa de sindicalización, pero es muy leve y no es estadísticamente significativo (B = -0.01, p > 0.05). Por último, el desempleo y el PIB tienen una asociación positiva con la extralegalidad de la huelga (B = 0.01, p > 0.05), es decir, tendería a asociarse a huelgas extralegales antes que las legales. No obstante, esta asociación es leve.
+
+```{r tabla03, echo=FALSE, out.width='75%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics("tabla03.png")
+```
+
+Si se analizan los estadísticos de ajuste, el modelo que posee el mejor ajuste corresponde al modelo 2 (AIC = 121.11; BIC = 141.71; Log Likelihood = -169.81) antes que el modelo 1, modelo 3 y modelo 4. No es posible realizar ajuste comparativo debido a que todos los modelos no fueron ajustados al mismo tamaño muestral del conjunto de datos.
+
+Se obtuvo una proporción de varianza compartida en nivel 2 del 20% del 18% de la correlación intraclase, y en nivel 1 del 50% del 18% de la correlación intraclase (R^2 de Bryk & Raudenbusch nivel 1 = 0.5; R^2 de Bryk & Raudenbusch nivel 1 = 0.2)
+
+```{r tabla04, echo=FALSE, out.width='75%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics("tabla04.png")
+```
+
+
+## Resumen y conclusiones
+
+Volviendo a los hipotesis iniciales de trabajo, podemos afirmar que aun cuando la mayoría de las relaciones contrastadas no presenta significación estadística debido a razones metodológicas, de todas formas podemos advertir ciertas tendencias que nos brindan información de interés.
+
+En ese sentido, una de las relaciones que reviste mayor magnitud es la existente entre rango de la empresa y huelga extra legal. Según los datos obtenidos, empresas más grandes (en términos de las ventas realizadas medidas en UF) serían más proclives a realizar huelgas extra-legales en lugar de legales.
+
+Asimismo, junto a esta variable, la otra que posee significación es la presencia de un sindicato. No obstante, presenta ciertos rasgos contradictorios en la medida que el sentido de la relación cambia según el modelo que se examine. En el modelo con puras variables a nivel empresa, hay una relación positiva, es decir la presencia del sindicato generaría una mayor probabilidad de que la huelga sea extra-legal, contradiciendo la hipótesis inicial de trabajo que consignaba una relación inversa, en tanto la presencia de sindicato produciría condiciones favorables a la negociación en los marcos de la institucionalidad laboral. Pese a lo anterior, en el modelo que incluye variables de ambos niveles, la relación entre estas dos variables exhibe el comportamiento predicho en la hipótesis, a saber, que la existencia de un sindicato desalentaría las huelgas extra-legales.
+
+En cuanto al PIB y desempleo, ambas variables de orden contextual o nivel dos, un aumento de cada una favorece la ocurrencia de huelgas extra legales. Esto contradeciría la hipótesis relativa al desempleo, en tanto se hipotetizaba que un mayor desempleo propiciaría huelgas legales, pero ocurre lo contrario, pues promueve la ocurrencia de huelgas extra-legales.. Acerca de la hipótesis vinculada a la relación entre PIB y legalidad de la huelga, tenemos que se cumple la hipótesis, es decir un menor variación relativa del PIB provocaría menos huelgas extra legales. 
+
+A su vez, cabe resaltar algunas limitaciones y proyecciones futuras sobre el informe. En primer lugar, el método de estimación utilizado no es el más adecuado en la medida que se le está dando un tratamiento a la variable dependiente como si fuera cuantitativa, cuando no lo es. En virtud de lo anterior, para el próximo informe se pretende realizar una regresión logística, siendo coherentes con el nivel de medición categórico que exhibe la variable legalidad de la huelga. 
+
+También, relevar que producto de lo anterior todos los coeficientes se ven alterados significativamente, tanto en significación como en magnitud, razón por la cual los resultados aquí señalados no poseen la exactitud que tendrían utilizando el método de estimación correcto. Pese a lo anterior, sí da ciertas señales respecto a cómo se relacionan las variables, en términos del sentido y dirección.
+
+Por último, la hipótesis relativa a la moderación que produciría la variable tasa de sindicalización no fue contrastada puesto que aún no se ha revisado la materia vinculada a efectos de interacción, necesaria para la estimación de este tipo de efectos.
+
+## Referencias
+
+Aguilar, O., & Henríquez, H. (2017). Huelgas laborales en Chile: Conciencia y paralización. Universitaria.
+
+Akkerman, A. (2008). Union competition and strikes: The need for analysis at the sector level. ILR Review, 61(4), 445–459.
+
+Alemán, J. (2008). Labor market deregulation and industrial conflict in new democracies: A cross-national analysis. Political Studies, 56(4), 830–856.
+
+Aravena, A., & Núñez, D. (2009). El renacer de la huelga obrera en Chile: El movimiento sindical en la primera década del siglo XXI. Instituto de Ciencias Alejandro Lipschutz (ICAL).
+Armstrong, A., & Águila, Á. B. (2006). Evolución del conflicto laboral en Chile: 1961-2002. Ediciones Universidad Católica de Chile.
+
+Burawoy, M. (1989). Two methods in search of science. Skocpol v/s Trotsky. Theory and Society, 18(6), 759–805.
+
+Franzosi, R. (1989). One hundred years of strike statistics: Methodological and theoretical issues in quantitative strike research. ILR Review, 42(3), 348–362.
+
+Franzosi, R. (2006). The puzzle of strikes: Class and state strategies in postwar Italy. Cambridge University Press.
+
+Gaudichaud, F. (2015). Las fisuras del neoliberalismo maduro chileno.
+Gutiérrez Crocco, F. (2017). Movilización legal: Una estrategia sindical con efectos ambivalentes. Izquierdas, (36), 200–221.
+
+Hox, J. J., Moerbeek, M., & Van de Schoot, R. (2017). Multilevel analysis: Techniques and applications. Routledge.
+
+Hyman, R. (1989). Strikes. Springer.
+
+Jansen, G., Akkerman, A., & Vandaele, K. (2017). Undermining mobilization? The effect of job flexibility and job instability on the willingness to strike. Economic and industrial democracy, 38(1), 99–117.
+
+Kelly, J. (2012). Rethinking industrial relations: Mobilisation, collectivism and long waves. Routledge.
+
+Medel, R., Pérez, D., Velásquez, D., & Morales, G. (2017). Huelgas con adjetivo: Hacia una diferenciación conceptual de la nueva estructura de conflictividad laboral. O. Aguilar, D. Pérez y H. Henríquez, Huelgas laborales en Chile: conciencia y paralización, 35–71.
+
+Medel, Rodrigo, & Pérez, D. (2017). Tres modelos de conflicto laboral en Chile: El peso de la economía, la organización sindical y el régimen de trabajo en las tendencias de la huelga extralegal. Revista Colombiana de Sociología, 40(2), 173–195.
+
+Merino, J. (2017). La potencialidad de la Regresión Logística Multinivel: Una propuesta de aplicación en el análisis del estado de salud percibido. Empiria: Revista de metodología de ciencias sociales, (36), 177–211.
+
+OHL. (2017). Informe de Huelgas Laborales 2016. Recuperado de Centro de Estudios del Conflicto y la Cohesión Social. (COES)
+
+Paldam, M., & Pedersen, P. J. (1982). The macroeconomic strike model: A study of seventeen countries, 1948–1975. ILR Review, 35(4), 504–521.
+
+Pérez, D., Medel, R., & Velásquez, D. (2015). El desarrollo de la huelga ilegal en el Chile contemporáneo (1990-2009). Latin American Studies Association Congress.
+
+Ratto, N. (2017). El poder de los trabajadores y los resultados de las huelgas laborales en el sector privado y asalariado en Chile (2006-2016).
+
+Snyder, D. (1975). Institutional setting and industrial conflict: Comparative analyses of France, Italy and the United States. American Sociological Review, 259–278.
+
+Waas, B. (2012). Strike as a fundamental right of the workers and its risks of conflicting with other fundamental rights of the citizens. XX World Congress, Santiago de Chile.
+

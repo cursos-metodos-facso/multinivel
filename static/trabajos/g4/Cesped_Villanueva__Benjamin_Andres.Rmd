@@ -1,0 +1,221 @@
+---
+title: "Sentido de Pertenencia en estudiantes chilenos"
+author: "Césped, González, Lazo, Villanueva"
+date: "13-10-2019"
+output:
+  pdf_document: default
+  html_document: default
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+_1. Introducción  una aproximación hacia el sentido de pertenencia en estudiantes chilenos_
+
+La preocupación por el sentido de pertenencia proviene de su importancia en cuanto ésta puede generar impactos positivos tanto como para estudiantes como para la comunidad educativa en su conjunto (Juvonen, 2006). De hecho, existen estudios que ponen el acento en cómo el sentido de pertenencia en la escuela puede ayudar a los jóvenes a integrarse de cierta forma al interior de la sociedad, sobre todo cuando se habla de estudiantes en contextos vulnerables (Riley, 2013). 
+Frente a este respecto, debe entenderse el sentido de pertenencia como “el nivel de apego de un estudiante a su escuela (inversión personal en su escuela), el compromiso (cumplimiento de las reglas y expectativas de la escuela), la participación, (compromiso académicos de la escuela y actividades extracurriculares), y la convicción en su escuela (la fe en sus valores y su significado)” (Wehlage, Rutter, Smith, Lesko, y Fernández, 1989 en Kia-Keating M. y Ellis, 2007).
+En tanto, son varios los factores que investigaciones empíricas han indicado como importantes para comprender cómo se desarrolla en  sí el sentido de pertenencia en la escuela, como lo es la relación intracomunidad (profesor-estudiante; estudiante-estudiante) (Hopenhayn et al. (2011), también factores como la motivación personal que tenga el estudiante a la hora de participar en la comunidad escolar.
+Aun cuando se tengan tales precendentes con respecto al sentido de pertenencia, asimismo se debe rescatar un rasgo cultural presente en los espacios de socialización secundaria  que se manifiesta en un proceso de homosocialización  por parte de la población masculina presente entre la población masculina que se relaciona al interior de los espacios escolares (Saavedra, 2016).A la luz de lo anterior, los espacios de interacción  escolares  resultarían ser ambientes favorables para cristalizar rasgos elementales en el proceso identitario de los jóvenes  varones  que se ven reflejados en ciertas disposiciones corporales y apropiaciones espaciales al interior de los establecimientos de educación. Ejemplo de esto son las apropiaciones espaciales de los patios por parte de varones, que, en los recreos tenderían a acaparar este lugar para practicar deportes.
+
+Asumiendo la diferencia entre escuelas en el contexto nacional, resulta relevante establecer una distinción apropiada entre escuelas más allá de poder levantar un análisis que refiera solamente a un caso concreto sin tener presente su especificidad contextual, por ello se ha optado por pesquisar la base de datos de la prueba PISA que en una de sus mediciones especifica en un índice construido el sentido de pertenencia de los distintos establecimientos educacionales a lo que también  se suma un índice construido por la misma institución internacional referida  al nivel sociocultural y económico de las   escuelas contempladas en la medición. 
+
+A partir de las anteriores afirmaciones que se tratará de responder  la siguiente pregunta de investigación:
+
+Pregunta 1
+¿Qué parte de la varianza de la variable BELONG es explicada por el contexto de las escuelas (tamaño de la escuela y promedio de Estatus socioeconómico y cultural)?
+H1: Se estima que las varianzas entre escuelas son altas, en tanto una escuela pequeña habría de tener mayor sentido de pertenencia y una escuela con un promedio de Estatus socioeconómico y cultural mayor también.
+Pregunta 2
+¿Cuáles son los efectos de las variables ST004D01T (género); MOTIVAT (motivación al éxito); COOPERATE (disposición a la cooperación) y unfairteacher (Parcialidad docente) sobre el sentido de pertenencia de los estudiantes?
+H1 (género): Debido a que las escuelas pueden presentarse como espacios donde se produce una apropiación de los espacios por parte de hombres, se cree que el sentido de pertenencia en mujeres sería menor, por lo que habría una relación entre variables.
+H2 (motivación al éxito): Producto de que teóricamente se pondera la motivación como uno de los factores fundamentales del sentido de pertenencia, se cree que existiría una relación significativa y positiva entre motivación y sentido de pertenencia.
+H3 (disposición a la cooperación): Debido a que el clima entre compañeros se considera fundamental para hablar de sentido de pertenencia en la teoría, se cree que las variables estarían relacionadas en un sentido positivo.
+H4: (parcialidad docente): Producto de que teóricamente la relación profesor-estudiante es vista como uno de los factores del sentido de pertenencia en la escuela, se cree que existiría una relación negativa entre las variables, es decir, mientras más parcial el profesor menos sentido de pertenencia tendría el estudiante.
+Pregunta 3
+¿Cuál es el efecto de la variación entre de las variables ST004D01T (género); MOTIVAT (motivación al éxito); COOPERATE (disposición a la cooperación) y unfairteacher (Parcialidad docente) y el sentido de pertenencia de los estudiantes entre contextos escolares (tamaño de la escuela y promedio de Estatus socioeconómico y cultural)? 
+H5: Probablemente los efectos de estas variables para el modelo multinivel tengan que ver con efectos de interrelación entre las mismas variables. Es por esto que creemos que primero debemos profundizar en contenidos acerca de interacción entre niveles para elaborar una hipótesis más apropiada para esta pregunta de investigación.
+
+_2. Metodología_
+__2.1 Descripción de la base__
+Como ya se ha hecho mención, se ha utilizado la  prueba PISA del año 2015 . La prueba en cuestión  consiste en un trabajo colaborativo de los países miembros de la OCDE  para  medir el rendimiento de los estudiantes de 15 años que están ad portas de  terminar el ciclo  escolar obligatorio con el fin de observar si los y las estudiantes cuentan con las competencias para desenvolverse en los posibles desafíos dela vida cotidiana una vez terminado el periodo escolar. La encuesta PISA se realiza cada 3 años y, asimismo, para obtener una visión  global, la metodología   de la encuesta comprende la aplicación de cuestionarios hacia el mismo establecimiento, los profesores y los apoderados (OCDE, 2015).
+
+El tamaño muestral para la aplicación del año 2015 cuenta con 6640 observaciones  a nivel  general. Por  otra parte, las variables de nivel dos compuestas por el "promedios estatus socioeconómico y género por escuela" son de: (colocar)
+
+```{r}
+#Librerias
+pacman::p_load(ggplot2, foreign, lme4, lmtest, lattice, stargazer, nortest, ggplot2,dplyr,car,corrplot,reghelper,haven,texreg)
+
+#abrir dataset
+dataset = read.csv("C:/Users/Camilo/Desktop/lmer4/CY6_MS_CMB_MERGE_F.csv")
+
+#Selección de variables
+dataset=dataset %>% select(CNTSCHID,BELONG,ST004D01T,MOTIVAT,COOPERATE,unfairteacher,ESCS,SCHSIZE) %>% 
+  as.data.frame()
+
+#converción de variables a numeric
+dataset$BELONG<- as.numeric(dataset$BELONG)
+dataset$MOTIVAT<-as.numeric(dataset$MOTIVAT)
+dataset$SCHSIZE<- as.numeric(dataset$SCHSIZE)
+dataset$COOPERATE<-as.numeric(dataset$COOPERATE)
+dataset$unfairteacher<-as.numeric(dataset$unfairteacher)
+dataset$ESCS<-as.numeric(dataset$ESCS)
+
+dataset$unfairteacher[dataset$unfairteacher==99] <- NA
+dataset$SCHSIZE[dataset$SCHSIZE==99999999] <- NA
+dataset = na.omit(dataset)
+```
+
+__2.2 Metodología__
+___Variable dependiente___
+Sentido de pertenencia (BELONG): Dicha variable refiere a un índice creado al interior de la encuesta PISA, este indicador se compone de seis items ya preguntados en PISA 2012. El formato de respuesta corresponde a una escala likert de 4 puntos con las categorías de respuesta  que van de "muy de acuerdo" a  "muy en desacuerdo" (OCDE, 2015).
+Los Items ST034Q02TA,ST034Q03TA y ST034Q05TA fueron recodificados a la inversa, por lo que el número mayor indica un mayor grado de sentido de pertenencia.
+
+___Variables independientes___
+Motivación al éxito(MOTIVAT) :dice construido a partir de una batería de preguntas  tipo escala likert de 4(muy de acuerdo a muy en desacuerdo) categorías por parte de la división  técnica de PISA 2015. Esta variable pretende dar cuenta de preferencias y pensamientos del o la estudiante.
+
+Disposición a la cooperación (COOPERATE) : PISA 2015 incluyó preguntas referidas la cooperación y al trabajo en equipo para medir el dominio de resolución de problemas de forma colaborativa. Esta variable  corresponde a un  índice  elaborado de un conjunto de preguntas  tipo escala likert de 4 categorías "Muy de acuerdo" a "Muy en desacuerdo".
+
+Parcialidad docente (unfairteacher): PISA 2015 incluyó esta pregunta como una variable proxy para medir clima escolar. Dicha variable tiene como propósito  observar comportamiento "injusto" por parte del profesorado. durante los últimos 12 meses. La variable se construyó a partir de una escala de 4 puntos  cuyas categorías de respuesta son de "Nunca o casi nunca", "algunas veces durante el año", "algunas veces al mes", "una vez a la semana o más". Para efectos de nuestro análisis la variable fue recodificada para cambiar la direccionalidad del efecto. De esta manera, a mayor magnitud, más "justo" el o la docente.
+
+___Variables independientes de nivel 2___
+Tamaño de la escuela (SCHSIZE): variable recuperada desde el cuestionario aplicado a nivel de escuela que contiene el total de matriculados. La información fue suministrada por los directores de los establecimientos.
+
+Promedio de Estatus socioeconómico y cultural: El índice de  Estatus socioeconómico y cultural toma en consideración la educación de los padres, la ocupación de mayor estatus de alguno de los padres y la posesión de libros en el hogar, entre otras variables como ingreso, etc. Se considerará el promedio del estatus socioeconómico y cultural por escuela.
+
+Promedio estudiantes por género: Para examinar el comportamiento de la variable dependiente teniendo en cuenta el género de las y los estudiantes, se decide calcular el promedio de la variable género por escuela.
+
+```{r}
+#Recodificar variable unfairteacher para cambiar su direccionalidad 
+dataset$fairteacher <- 24 - dataset$unfairteacher
+
+#cÃ¡lculo promedios estatus socioeconÃ³mico y gÃ©nero por escuela
+dataset<-dataset %>%
+  group_by(CNTSCHID) %>%
+  mutate(m_gen=mean(ST004D01T))
+summary(dataset$m_gen)
+
+dataset<-dataset %>%
+  group_by(CNTSCHID) %>%
+  mutate(m_escs=mean(ESCS))
+(dataset$m_escs)
+```
+
+```{r}
+#descriptivos por variable 
+stargazer(dataset, title = "Descriptivos generales", type='text')
+```
+
+```{r}
+#exploraciÃ³n de datos
+hist(dataset$BELONG, xlim = c(0,1300)) #distribuciÃ³n variable dependiente a nivel estudiante
+#histograma de BELONG por escuela
+dataset <- dataset %>%
+  group_by(CNTSCHID) %>%
+  mutate(meanbelong = mean(BELONG))
+hist(dataset$meanbelong)
+
+#matriz de correlaciones 
+cormat=dataset %>% select(BELONG,ST004D01T,MOTIVAT,COOPERATE,fairteacher,ESCS,SCHSIZE,m_gen,m_escs) %>% cor()
+round(cormat, digits=2)
+corrplot.mixed(cormat)
+```
+
+Al examinar la distribución de la variable BELONG con un histograma nos damos cuenta que en los niveles más bajos de Sentido de Pertenencia hay una concentración de casos que va decayendo al avanzar el índice. Luego, al llegar a los valores superiores a 1100, existe una mayor cantidad de casos. La distribución termina por tener un sesgo hacia la derecha.
+
+Al examinar las correlaciones entre las variables que se tendrán en cuenta, gran parte de estas son bastante pequeñas, ninguna pasando de 0,18. Esto, con excepción de las variables de estatus socioeconómico y cultural y género, con sus respectivos promedios (correlación de 0,69 y 0,41 respectivamente). Esto es esperable dado que, como se mencionó, son los promedios de las variables.
+
+_3. Resultados: Aplicación de modelos_
+__3.1 Modelos de regresión de mínimos cuadrados  de nivel uno__
+```{r}
+reg<- lm(BELONG~ST004D01T+MOTIVAT+COOPERATE+fairteacher+ESCS+SCHSIZE+m_gen+m_escs, data=dataset)
+stargazer(reg, title = "RegresiÃ³n datos individuales", type='text')
+
+#EvaluaciÃ³n de residuos
+influenceIndexPlot(reg, vars=c("Cook", "Studentized", "hat"), id.n=5)
+influencePlot(reg, id.n=3)
+
+#RegresiÃ³n por casos agrupados en escuelas
+agg_dataset=dataset %>% group_by(CNTSCHID) %>% summarise_all(funs(mean)) %>% as.data.frame()
+stargazer(agg_dataset, type = "text") #agrupar casos por escuela y visualizar descriptivos
+reg_agg<- lm(BELONG~ST004D01T+MOTIVAT+COOPERATE+fairteacher+ESCS+SCHSIZE+m_gen+m_escs, data=agg_dataset) #regresiÃ³n
+
+#Comparar regresiones
+stargazer(reg,reg_agg, title = "ComparaciÃ³n de modelos",column.labels=c("Individual","Agregado"), type ='text')
+```
+
+__3.2 Modelos multinivel__
+```{r}
+#modelo nulo
+model0 <- lmer(BELONG ~ 1 + (1|CNTSCHID), data=dataset, REML=FALSE)
+screenreg(model0)
+reghelper::ICC(model0) #calculo correlaciÃ³n intraclase modelo nulo (ICC)
+```
+Al estimar el modelo nulo y calcular la correlación intraclase, verificamos que es de 0,038. De este modo, podemos decir que un 3,8% ~ 4% de la varianza de la variable dependiente Sentido de Pertenencia, se encuentra en a nivel de escuelas.
+
+
+__3.3 Modelos con variables de nivel 1__
+```{r}
+#Modelos con variables nivel 1
+model1 <- lmer(BELONG ~ 1 + ST004D01T+(1|CNTSCHID), data=dataset, REML=FALSE)
+screenreg(model1)
+anova(model0,model1) #comparaciÃ³n modelos
+```
+
+```{r}
+model2 <- lmer(BELONG ~ 1 + ST004D01T+ESCS+(1|CNTSCHID), data=dataset, REML=FALSE)
+screenreg(model2)
+anova(model0,model1,model2)
+```
+
+```{r}
+model3 <- lmer(BELONG ~ 1 + ST004D01T+ESCS+MOTIVAT+(1|CNTSCHID), data=dataset, REML=FALSE)
+screenreg(model3)
+anova(model0,model1,model2,model3)
+```
+```{r}
+model4 <- lmer(BELONG ~ 1 + ST004D01T+ESCS+MOTIVAT+fairteacher+(1|CNTSCHID), data=dataset, REML=FALSE)
+screenreg(model4)
+anova(model0,model1,model2,model3,model4)
+```
+
+
+```{r}
+model5 <- lmer(BELONG ~ 1 + ST004D01T+ESCS+MOTIVAT+fairteacher+COOPERATE+(1|CNTSCHID), data=dataset, REML=FALSE)
+screenreg(model5)
+anova(model0,model1,model2,model3,model4,model5)
+```
+Se fueron agregando de forma anidada las variables de nivel uno, para finalmente llegar al modelo 5 (model5). Al comparar las maldades de ajuste de los modelos, nos damos cuenta que existe cada vez un mayor ajuste de los modelos a medida que se van agregando variables. Por otra parte, vemos que todas estas variaciones son estadísticamente significativas.
+
+__3.4 Modelos con variables de nivel 2__
+```{r}
+model6 = lmer(BELONG ~ 1 + SCHSIZE + m_escs + m_gen+(1 | CNTSCHID), data = dataset)
+screenreg(model6)
+anova(model5,model6)
+```
+
+__3.5 Modelo multinivel intercepto aleatorio.__
+```{r}
+model7 <- lmer(BELONG ~ 1 + ST004D01T+ESCS+MOTIVAT+fairteacher+COOPERATE+SCHSIZE+m_escs+m_gen+(1|CNTSCHID), data=dataset, REML=FALSE)
+screenreg(model7)
+```
+__3.6 modelo multinivel pendiente aleatoria.__
+```{r}
+model8 <- lmer(BELONG ~ 1 + ST004D01T+ESCS+MOTIVAT+fairteacher+COOPERATE+SCHSIZE+m_escs+m_gen+(1+ESCS|CNTSCHID), data=dataset, REML=FALSE)
+screenreg(model8)
+
+screenreg(list(model5, model6, model7,model8)) #comparaciÃ³n modelos nivel 1, nivel 2, multinivel interceptos aleatorios y multi pendiente aleatoria.
+```
+Al comparar los modelos de nivel 1, nivel 2, multinivel con interceptos aleatorios y multinivel con pendiente aleatoria, nos damos cuenta que: El modelo nivel 1 ajusta mejor que el modelo solo con variables nivel 2. Sin embargo, al agregar todas las variables al modelo multinivel, el ajuste es significativamente mejor (model7). Sin embargo, el modelo no es mejor al introducir pendientes aleatorias para la variable ESCS. Suponemos que para el resto de las variables tampoco lo será. Para la próxima entrega se verá con más detalle esto.
+
+_4 Conclusiones_
+
+Las conclusiones se realizarán en la entrega definitiva con todos los modelos listos y las herramientas necesarias para corroborar o descartar las hipótesis.
+
+
+
+
+
+
+
+
+
+

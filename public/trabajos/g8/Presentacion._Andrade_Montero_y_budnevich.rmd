@@ -1,0 +1,208 @@
+---
+title: "¿Qué peso tiene lo organizacional y económico en la ocurrencia de las huelgas extra-legales en Chile?: un análisis regional"
+subtitle: "Análisis Multinivel- Universidad de Chile"
+author: "Andrade, Budnevich y Montero"
+date: "`r Sys.Date()`"
+output: revealjs::revealjs_presentation
+---
+
+# 1. Problema
+
+## 1.1 La investigación sobre **huelgas laborales**
+- Las huelgas laborales permiten dar cuenta del grado de conflictividad entre trabajadores y empleadores (Burawoy, 1989).
+- En contextos donde la institucionalidad laboral es altamente restrictiva como en *Chile* (Waas, 2012) se ha podido evidenciar una alta ocurrencia de huelgas fuera de la ley (Armstrong & Águila, 2006) o **extra-legales** (R. Medel, Pérez, Velásquez, & Morales, 2017; OHL, 2017).
+
+
+## ¿Cómo está el termometro de conflictividad en Chile?
+
+```{r huelga, echo=FALSE, out.width='75%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics("huelgas.png")
+```
+
+## 1.2 El análisis multinivel para las huelgas
+
+- Antecedentes empíricos: Medel y Pérez (2017) abordan como ciertas características del régimen de trabajo y de la organización sindical se asocian con las huelgas extra-legales
+Sus resultados relegan el peso de la economía en la incidencia de huelgas extra-legales
+- Franzosi (2006) plantea que se debe considerar aspectos **contextuales** de donde ocurre la huelga como el lugar **geográfico**.
+- Jansen et. al (2014) señala que los ciclos de protesta laboral tienen cierta *regularidad* y *prominencia* según el lugar (e.g., país, región)
+
+
+# 2. Objetivo e hipótesis
+
+## 2.1 Objetivo general
+
+- Estimar el efecto que tienen los factores *organizacionales* y *económicos* a nivel de las **empresas** y **regiones**, sobre la probabilidad de ocurrencia de las huelgas extra-legales en Chile en 2017.
+- Se evaluará la relación entre factores organizacionales y económicos a dos niveles: 
+  - A nivel de la **empresa**: tipo de organización sindical, tamaño del sindicato, número de trabajadores involucrados en la huelga, tamaño de la empresa
+  - A nivel de las **regiones**: tasa de sindicalización, presencia de federaciones y centrales, PIB y desempleo.
+
+## 2.2 Factores económicos
+
+- Ante condiciones económicas desfavorables los trabajadores preferirán negociaren marcos legales (Paldam & Pedersen, 1982; Snyder, 1975). 
+  - H<sub>1</sub>: Existe una asociación negativa entre el desempleo e inflación de la región y la probabilidad de ocurrencia de una huelga extralegal
+
+## 2.3 Factores organizacionales
+
+- La presencia de un sindicato -junto con una percepción de injusticia en el trabajo- propicia la ocurrencia de huelgas, *pero dentro de los marcos legales* (Kelly,2012)
+  - H<sub>2</sub>: La presencia del sindicato a nivel de la empresa se asocia negativamente con la probabilidad de ocurrencia de una huelga extra-legal
+
+## 2.4 Mediación entre factores
+
+- Diversos estudios a nivel internacional (Charlwood & Haynes, 2008) como nacional (Baltera, 2016; Dirección del Trabajo, 2015; OHL, 2017)  parecen confirmar esta asociación entre *concentraciones de trabajadores* (grandes empresas) y actividad huelgística legal. 
+  - H<sub>3</sub>: La relación positiva entre tamaño de empresa y ocurrencia de huelga extralegal es moderada negativamente por la tasa de sindicalización de la región. 
+
+# 3. Datos, variables y método
+
+## 3.1 Datos y método 
+- **Datos**: Observatorio de Huelgas Laborales (COES), Dirección del Trabajo, Encuesta Nacional de Empleo (INE) y Banco Central 
+- **Método**: modelo multinivel logístico 
+  - Estos modelos permiten observar como las observaciones “individuales” interactúan con el contexto social al cual pertenecen (Hox, Moerbeek, & Van de Schoot, 2017, p. 2)
+  
+## 3.2 Variables
+
+```{r variables, echo=FALSE, out.width='75%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics("variable.png")
+```
+
+# 4. Resultados 
+
+```{r, echo=FALSE}
+#Cargar librerías
+if (!require("pacman")) install.packages("pacman") # solo la primera vez
+pacman::p_load(lme4,
+               reghelper,
+               haven,
+               stargazer,
+               ggplot2, # gr?ficos
+               dplyr, # manipulacion de datos
+               texreg # tablas lme4
+) # paquetes a cargar
+
+#Cargar base de datos
+ohl = read.csv("OHL.csv", sep = ";")
+ohl_cov = read.csv("OHL_cov.csv", sep = ",")
+ohl_cov[ohl_cov == 99] <- NA
+
+#Filtrar por año
+ohl2 <- filter(ohl_cov, yr == 2017)
+OHL=ohl2 %>% select(tc,externo,org,trabemp,rangoemp,leg,reg1,sindicalizacion,desempleo,PIB) %>% as.data.frame()
+
+```
+
+```{r, echo=TRUE, result='asis'}
+stargazer(OHL,title="Estadísticos descriptivos", type = "text")
+```
+```{r tabla2, echo=FALSE, out.width='75%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics("tabla2.jpeg")
+```
+
+
+```{r echo=FALSE}
+OHL$org2 <- OHL$org #copiar
+
+#org (presencia sindical)
+
+OHL$sindicato <- car::recode(OHL$org,recodes = "0=0;c(1,2,3,4,5,11)=1; c(6,7,8,9,10)=NA")
+table(OHL$sindicato)
+
+OHL$sindicato <- factor(OHL$sindicato, levels = c(0:1), labels = c("Ausencia sindical", "Presencia sindical"))
+table(OHL$sindicato)
+
+
+#rangoempresa 
+OHL$rangoemp <- car::recode(OHL$rangoemp, recodes = "1=NA; 2=2; 3=3; 4=4; 5=5; 6=6; 7=7; 8=8; 9=9; 10=10; 11=11; 12=12; 13=13")  
+table(OHL$rangoemp)
+
+#legalidad (dummy)
+table(OHL$leg)
+OHL$leg <- car::recode(OHL$leg,recodes = "1=0;2=1")
+table(OHL$leg)
+
+#covariables, trabajadores involucrados y trabajadores empresa a numeric
+OHL$tc <- as.numeric(OHL$tc)
+OHL$trabemp <- as.numeric(OHL$trabemp)
+OHL$PIB <- as.numeric(OHL$PIB)
+OHL$desempleo <- as.numeric(OHL$desempleo)
+OHL$sindicalizacion <- as.numeric(OHL$sindicalizacion)
+
+```
+
+## 4.1 Modelo nulo
+
+```{r echo=TRUE, warning=FALSE}
+results_0 = lmer(leg ~ 1 + (1 | reg1), data = OHL)
+summary(results_0)
+screenreg(results_0)
+0.03/(0.03+0.2)
+```
+
+## 4.2 Modelo con variables individuales y contextuales
+
+```{r, echo= FALSE, eval= FALSE, warning=FALSE}
+#2. Modelo con variables individuales
+
+results_1 = lmer(leg ~ 1 + tc + externo + org + rangoemp + trabemp + (1 | reg1), data = OHL)
+screenreg(results_1, naive=TRUE)
+
+#3. Modelo con variables contextuales
+results_2 = lmer(leg ~ 1 + sindicalizacion + desempleo + PIB + (1 | reg1), data = OHL)
+screenreg(results_2, naive=TRUE)
+
+#4. Modelo con variables individuales y contextuales
+results_3 = lmer(leg ~ 1 + tc + externo + org + rangoemp + trabemp + sindicalizacion + desempleo + PIB + (1 | reg1), data = OHL, )
+screenreg(results_3, naive=TRUE)
+
+# Ajuste comparativo: devianza
+#results_10 = lmer(leg ~ 1 + tc + externo + org + rangoemp + trabemp + (1 | reg1), data = OHL, REML = FALSE)
+#results_11 = lmer(leg ~ 1 + sindicalizacion + desempleo + PIB + (1 | reg1), data = OHL, REML = FALSE)
+#results_12 = lmer(leg ~ 1 + tc + externo + org + rangoemp + trabemp + sindicalizacion + desempleo + PIB + (1 | reg1), data = OHL, REML = FALSE)
+#anova(results_10, results_12)
+
+```
+
+```{r tabla 3, echo=FALSE, out.width='75%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics("tabla3.jpeg")
+```
+
+## Legalidad de la huelga y trabajadores involucrados en la huelga
+```{r grafico1, echo=FALSE, out.width='75%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics("grafico1.jpeg")
+```
+
+
+## 4.3 Ajuste del modelo multinivel
+
+```{r tabla4, echo=FALSE, out.width='75%', fig.asp=.75, fig.align='center'}
+knitr::include_graphics("tabla4.jpeg")
+```
+
+# 5. Referencias 
+
+## Referencias
+
+- <small>Aguilar, O., & Henríquez, H. (2017). Huelgas laborales en Chile: Conciencia y paralización. Universitaria.
+- Akkerman, A. (2008). Union competition and strikes: The need for analysis at the sector level. ILR Review, 61(4), 445–459.
+- Alemán, J. (2008). Labor market deregulation and industrial conflict in new democracies: A cross-national analysis. Political Studies, 56(4), 830–856.
+- Aravena, A., & Núñez, D. (2009). El renacer de la huelga obrera en Chile: El movimiento sindical en la primera década del siglo XXI. Instituto de Ciencias Alejandro Lipschutz (ICAL).
+- Armstrong, A., & Águila, Á. B. (2006). Evolución del conflicto laboral en Chile: 1961-2002. Ediciones Universidad Católica de Chile.
+- Burawoy, M. (1989). Two methods in search of science. Skocpol v/s Trotsky. Theory and Society, 18(6), 759–805.
+- Franzosi, R. (1989). One hundred years of strike statistics: Methodological and theoretical issues in quantitative strike research. ILR Review, 42(3), 348–362.
+- Franzosi, R. (2006). The puzzle of strikes: Class and state strategies in postwar Italy. Cambridge University Press.
+- Gaudichaud, F. (2015). Las fisuras del neoliberalismo maduro chileno.
+- Gutiérrez Crocco, F. (2017). Movilización legal: Una estrategia sindical con efectos ambivalentes. Izquierdas, (36), 200–221.</small>
+
+## Referencias
+
+- <small>Hox, J. J., Moerbeek, M., & Van de Schoot, R. (2017). Multilevel analysis: Techniques and applications. Routledge.
+- Hyman, R. (1989). Strikes. Springer.
+- Jansen, G., Akkerman, A., & Vandaele, K. (2017). Undermining mobilization? The effect of job flexibility and job instability on the willingness to strike. Economic and industrial democracy, 38(1), 99–117.
+- Kelly, J. (2012). Rethinking industrial relations: Mobilisation, collectivism and long waves. Routledge.
+- Medel, R., Pérez, D., Velásquez, D., & Morales, G. (2017). Huelgas con adjetivo: Hacia una diferenciación conceptual de la nueva estructura de conflictividad laboral. O. Aguilar, D. Pérez y H. Henríquez, Huelgas laborales en Chile: conciencia y paralización, 35–71.
+- Medel, Rodrigo, & Pérez, D. (2017). Tres modelos de conflicto laboral en Chile: El peso de la economía, la organización sindical y el régimen de trabajo en las tendencias de la huelga extralegal. Revista Colombiana de Sociología, 40(2), 173–195.
+- Merino, J. (2017). La potencialidad de la Regresión Logística Multinivel: Una propuesta de aplicación en el análisis del estado de salud percibido. Empiria: Revista de metodología de ciencias sociales, (36), 177–211.
+OHL. (2017). Informe de Huelgas Laborales 2016. Recuperado de Centro de Estudios del Conflicto y la Cohesión Social. (COES)
+- Paldam, M., & Pedersen, P. J. (1982). The macroeconomic strike model: A study of seventeen countries, 1948–1975. ILR Review, 35(4), 504–521.
+- Waas, B. (2012). Strike as a fundamental right of the workers and its risks of conflicting with other fundamental rights of the citizens. XX World Congress, Santiago de Chile.</small>
+
+
+ 

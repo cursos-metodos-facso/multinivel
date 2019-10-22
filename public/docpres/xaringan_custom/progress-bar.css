@@ -1,8 +1,6 @@
 
 .remark-slide-number {
-  position: fixed;
-  top: 0px;
-  left: 0px;
+  position: inherit;
 }
 
 .remark-slide-number .progress-bar-container {
@@ -12,7 +10,10 @@
   display: block;
   left: 0;
   right: 0;
+  top: 0px;
+  left: 0px;
 }
+
 
 .remark-slide-number .progress-bar {
   height: 100%;

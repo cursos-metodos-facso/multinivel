@@ -11,86 +11,33 @@ output:
 
 **Martín Venegas, Andreas Lafferte, Diego Esturillo & Jan Dimter**
 
+## **Resumen**
 
-Existe un consenso generalizado en la literatura sobre la desactualización e ineficacia de la política de regularización migratoria del país, la cual no tiene la capacidad de hacer frente a los flujos migratorios del contexto actual. Dicha situación tiene un impacto en las condiciones de vida de la población migrante en distintas fases del proceso de migración: llegada al país, permanencia en el país y salida del país. En términos de llegada y permanencia en el país la literatura sugiere una relación entre la dificultad de regularizar la situación y el acceso a derechos como salud, educación, trabajo y vivienda.
-Dentro de la dimensión de vivienda, autores como Arís, Mesa & Valenzuela (2018) han diagnosticado, para Chile y países vecinos, la ausencia del derecho a la vivienda en lo que es el reconocimiento de derechos de la población migrante (p. 52). Por otro lado, autores como Link, Troncoso, Troncoso & Fundación Techo (2018) muestran problemáticas contingentes como: el hacinamiento y allegamiento, el mercado inmobiliario informal y las situaciones de abuso (p.ej renta excesiva y cambiante) que sufre la población migrante en lo que respecta a sus condiciones de habitabilidad.
+Al igual que otros países de la región, Chile vive la experiencia de nuevas transformaciones de su flujo migratorio. Esta experiencia se ve aparejada del fenómeno de arriendos abusivos, problema que permite observar uno de los espacios de vulnerabilidad a la que se ve enfrentada la población migrante. Esta investigación indaga en los factores que median el precio de arriendo por parte de los habitantes de Chile durante el año 2017, focalizando en la población inmigrante. Las ​ preguntas a responder son ¿Cuáles son los principales determinantes que influyen en las diferencias en los costos de arriendo de la población migrante entre las distintas comunas de Chile al año 2017? ¿Cómo influye el porcentaje de arriendo sin contrato en los costos de arriendo de la población dependiendo de la comuna? ¿cómo influye la cantidad de acceso a servicios en los costos de arriendo de la población dependiendo de la comuna? y ¿Cómo influye la nacionalidad en los costos de arriendo en la población al 2017? La hipótesis general de la investigación es que los principales factores que influyen en los costos de arriendo de la población en las condiciones mencionadas son el porcentaje de arriendo sin contrato de la comuna y el promedio de acceso a servicios básicos en la comuna. Se testea lo anterior teniendo como fuente de información la Encuesta Casen 2017 (que contiene 216.439 casos originalmente de los cuales 39.275 fueron utilizados) y se realizará un análisis multinivel (HLM) a través del software Rstudio. Uno de los hallazgos preliminares que refuta parte de la hipótesis central es que ​ el promedio de arriendo sin contrato a nivel comunal no obtiene significancia estadística en el modelo realizado. Asimismo, se señala cómo hallazgo para las hipótesis específicas que las poblaciones colombianas, venezolanas y africanas pagan, en promedio, mayores costos de arriendo que la población chilena.
 
-Santiago y la zona norte figuran como aquellas con mayor presencia de población migrante y también con mayores tazas de problemáticas como déficit habitacional cuantitativo y hacinamiento (SJM, 2019). Sin embargo, la oferta de arriendo y sus costos parecen ser distintos en cada zona, en regiones como Antofagasta hay una baja oferta y altos costos, a diferencia de Santiago. A partir de esta situación, surgen las siguientes preguntas y sus hipótesis:
+Conceptos clave: inmigración, arriendo, análisis multinivel
 
-P1: ¿Cuáles son las principales determinantes que influyen en las diferencias en los costos de arriendo de la población migrante entre las distintas comunas de Chile al año 2017?
-
-H1: Una de las principales determinantes que influyen en las diferencias en los costos de arriendo de la población migrante entre las distintas comunas de Chile al año 2017 será el porcentaje de arriendo sin contrato de la comuna. Además, el acceso a servicios básicos también será uno de los principales determinantes.
-
-P2: ¿Cómo influye el porcentaje de arriendo sin contrato en los costos de arriendo de la de la población migrante dependiendo de la comuna?
-
-H2: A mayor porcentaje de arriendo sin contrato habrá mayores costos de arriendo en la comuna
-
-P3: ¿Cómo influye la cantidad de acceso a servicios en los costos de arriendo de la población migrante dependiendo de la comuna?
-
-H3: A mayor promedio1 de acceso a servicios en la comuna habrá mayores costos de arriendo.
-Ficha metodológica
-
-**Base de datos: Casen 2017**
-
-Alcance investigación: Exploratoria y relacional
-
-Nivel 1: encuestados de nacionalidad no chilena. r1b. Cuando usted nació ¿en qué comuna o país vivía su madre? Respuesta en categorías nominales con especificación:
-
-Nivel 2: comuna
-
-Variable dependiente: “costo de arriendo”: v18. Su hogar ¿Cuánto paga de arriendo? Respuesta libre tipo numérica3
-
-Variable independiente de hipótesis: “porcentaje arriendos sin contrato”
-
-- v13. Su hogar, ¿bajo qué situación usa la vivienda? Respuesta en categorías nominales:
-
-- v37. Del siguiente listado de servicios, ¿Su vivienda se encuentra a…? Responda cada alternativa 1. Sí 2. No 9. No sabe. Respuesta nominal dicotómica:
-
-  a) ¿Menos de 8 cuadras o 1 Km de un servicio de transporte público (paradero, estación)?
-  b) ¿A menos de 20 cuadras o 2,5 Km de un centro educacional (colegio o jardín infantil)?
-  c) ¿A menos de 20 cuadras o 2,5 Km de un centro de salud (atención primaria o nivel superior)?
-  d) ¿A menos de 20 cuadras o 2,5 Km de un supermercado, almacén o feria?
-  e) ¿A menos de 20 cuadras o 2,5 Km de un cajero automático o caja vecina?
-  f) ¿A menos de 20 cuadras o 2,5 Km de un equipamiento deportivo (centros deportivos, canchas, skatepark)?
-  g) ¿A menos de 20 cuadras o 2,5 Km de áreas verdes (plazas o parques)?
-  h) ¿A menos de 20 cuadras o 2,5 Km de equipamiento comunitario (centros vecinales, sedes sociales, biblioteca vecinal o centro cultural comunitario)?
-  i) ¿A menos de 20 cuadras o 2,5 Km de una farmacia?
-
-Variables de control:
-
-Nivel 1: Sexo, edad, año llegada a Chile, discriminado por ser extranjero
-
-Nivel 2: Porcentaje de subsidio de arriendos dados, porcentaje de hacinamiento
+## [Informe 1](../trabajos/g1/inf1Venegas_Marquez__Martin.pdf)
 
 <hr>
 
-# Grupo 2: Trato en el sistema de salud en Santiago
+# Grupo 2: ¿Qué pueden hacer las escuelas para disminuir la desigualdad en el conocimiento cívico?
 
-**Javiera Carvajal, Victor Jimenez, Karen Tapia**
+**Alejandra Delaveau, Catalina Flores, Anais Herrera, Francisco Meneses y Víctor Jiménez.**
 
-- Problema de investigación: Diferencia en el trato en el sistema de salud.
-- Hipótesis (multinivel): Existen diferencias de trato hacia las personas en el sistema de salud dependiendo de la comuna de residencia de esta.
-- Datos a utilizar: Base de datos y libro **Desiguales (2017)**
-- Principales variables:
-  - Dependiente: Trato en el sistema de salud.
-  - Independiente nivel 1: Rango etario, clase social, sexo.
-  - Nivel 2: Comuna de residencia
+## Resumen
+
+A partir del diagnóstico de desafección y bajos índices de participación política a nivel mundial y, específicamente, para el caso de Chile, los estudios sobre los factores que influyen en estos fenómenos son sociológica y políticamente relevantes. En base a ello, se han desarrollado una serie de estudios vinculados con el conocimiento, las creencias, las actitudes, disposiciones y prácticas relacionadas a la ciudadanía y el sistema democrático. Una parte de estos se dedican al análisis del conocimiento cívico, su influencia en la formación de ciudadanía activa y su vinculación con los otros elementos que se relacionan con ella. Estos dan cuenta de la relevancia del conocimiento cívico para el ejercicio de la ciudadanía activa o “ser buen ciudadano” y, por lo tanto, las bases de la democracia, en un contexto de auge de autoritarismos en Latinoamérica. Además, identifican, para el caso de Chile, la desigualdades socioeconómica y de género asociadas a este. La presente investigación analiza los elementos de nivel escuela que influyen sobre el conocimiento cívico, a partir de la influencia dada de factores individuales como el nivel socioeconómico y el género. Se enfoca en estudiar los efectos de las variables correspondientes al contexto escolar en el conocimiento cívico y su posible efecto de moderación hacia la relación entre este y el nivel socioeconómico o el género de los estudiantes de octavo básico que conforman la muestra. Es por lo anterior que la pregunta que guía la investigación es ¿Qué características del colegio son capaces de reducir la diferencia en el conocimiento cívico entre estudiantes de distintos origen socioeconómico y género? Se pretendió confirmar si un buen clima escolar en el colegio, junto a una percepción positiva de los estudiantes en cuanto al desarrollo de discusiones y un alto interés participativo de los estudiantes, influyen de manera positiva en el conocimiento cívico, moderando de esta manera el efecto del nivel socioeconómico y el género. Para lograr dar respuesta a la problemática planteada se utilizó como base de datos el estudio Internacional sobre Educación Cívica y Ciudadana (ICCS) del año 2016 de la IEA, está incorpora 5081 estudiantes de octavo básico de 178 escuelas chilenas. Para fines de esta investigación solo se utilizarán siete variables. Al llevar a cabo un análisis multinivel es posible notar cómo la cultura participativa, la apertura a la discusiones y la composición socioeconómica sí tienen efectos significativos en cuanto al conocimiento cívico de los estudiantes. En relación con el clima escolar y los espacios de participación no es posible notar algún tipo de efecto significativo. No identificó que alguna de las variables de nivel 2 tuviesen efecto de moderación para la relación entre variables de nivel 1 y conocimiento cívico. Para próximas investigación relacionadas a la problemáticas en cuestión, resultaría interesante llevar a cabo una agrupación de las variables de manera diferente para la medición de nivel socioeconómico agregado, como también, el desarrollo del datos longitudinales para un análisis más robusto.
+
+## [Informe 1](../trabajos/g2/Meneses_Rivas__Francisco_Javier.html)
 
 <hr>
-# Grupo 3: ¿Qué pueden hacer las escuelas para disminuir la desigualdad en el conocimiento cívico?
 
-**Alejandra Delaveau, Catalina Flores, Anais Herrera y Francisco Meneses.**
-
-- Problema de investigación: Los estudios enfocados en la temática han destacado el efecto positivo del nivel socioeconómico y de pertenecer al género femenino sobre el conocimiento cívico, así como el efecto de algunas variables contextuales. No obstante, aún no se ha evaluado qué variables correspondientes al contexto escolar pueden moderar la relación entre el nivel socioeconómico y el conocimiento cívico. La presente propuesta de investigación busca responder la siguiente pregunta ¿Qué características del colegio son capaces de reducir la diferencia en el conocimiento cívico de estudiantes de distinto origen socioeconómico?
-- Hipótesis (multinivel): Se espera que un buen clima escolar, una percepción positiva de los estudiantes sobre la apertura en las discusiones en el aula y una alta cultura participativa de los estudiantes posean un efecto positivo en el conocimiento cívico, capaz de moderar el efecto del nivel socioeconómico.
-- Datos a utilizar: **ICCS (2016) Chile**, donde se incorporan 5.081 estudiantes de 8°grado anidados en 178 escuelas.
-- Principales variables: Conocimiento cívico (PV1CIV), género (S_GENDER), nivel socioeconómico (S_NISB), clima escolar (S_STUTREL, S_INTACT y S_ABUSE), percepcion de los estudiantes sobre la apertura en las discusiones en el aula (IS3G17A-IS3G17F) y cultura participativa de los estudiantes (IS3G21A-IS3G21E).
-
-<hr>
-# Grupo 4: Jóvenes chilenos y autoritarismo: Análisis multinivel sobre factores que predicen la actitud de los jóvenes chilenos hacia el autoritarismo
+# Grupo 3: Jóvenes chilenos y autoritarismo: Análisis multinivel sobre factores que predicen la actitud de los jóvenes chilenos hacia el autoritarismo
 
 **Cristian Fuentes, Brigitte Ortiz, Guislaine Espinoza & Gabriel Fuentes**
 
+## Resumen
 
 Estudios recientes (ICCS, 2016) han señalado que las y los jóvenes de latinoamérica (siendo Chile uno de los países estudiados) muestran bajo conocimiento cívico y, a pesar de que existen posturas favorables hacia la tolerancia hacia las minorías y la equidad de género, persisten actitudes que tienden a justificar la violencia y el autoritarismo.
 
@@ -102,45 +49,15 @@ Nuestra hipótesis anticipa que los sujetos expuestos a relaciones familiares je
 
 Los datos a utilizar: **“Primera Encuesta de Desarrollo Humano en Niños, Niñas y Adolescentes” del año 2017 de PNUD. **
 
-Respecto de las variables a utilizar:
-
-- Variables nivel 1: “Relaciones familiares jerárquicas”, “Percepción de inseguridad del estudiante” y “Formación Cívica de los estudiantes”.
-- Variables Nivel 2: “Dependencia administrativa del colegio”, “Región” y “Nivel Socioeconómico”.
-- Variable dependiente: “Actitud hacia el autoritarismo”.
+## [Informe 1](../trabajos/g3/Participacio__769_n_en_acciones_colectivas.pdf)
 
 <hr>
-# Grupo 5: Satisfacción con el uso del tiempo según grupos etarios: El impacto de la clase
 
-**Antonia Atria, Isidora Didier & Carla Maguida**
-
-Problema de Investigación
-
-En el último tiempo, Chile ha estado sumergido en la discusión sobre el proyecto de Ley de 40 horas, que consiste en disminuir la jornada laboral semanal de 45 a 40 horas. Durante la discusión de este proyecto, un argumento que ha resaltado sobre el resto es que los/as trabajadores/as dispondrán de más tiempo para estar con su familia, y aumentaría su tiempo de ocio. En este escenario, resulta importante examinar la satisfacción que las personas sienten de la forma en que usan su tiempo libre, y, específicamente, si está satisfacción se ve afectada por elementos estructurales, es decir, por su posición socioeconómica.
-
-Hipótesis
-
-A partir del problema planteado surge la hipótesis del presente estudio. Se espera que los jóvenes y los adultos jóvenes, agrupados en los tramos 15 a 24 años y 25 a 34 años, de comunas con mayores ingresos, presenten mayores niveles de satisfacción con el uso que le dan a su tiempo libre. Bajo esta misma línea, se espera que quienes presenten menores niveles de satisfacción con el uso de su tiempo libre sean adultos y adultos mayores de clase baja, agrupados en el tramo de 65 años y más.
-
-Datos a utilizar: Base de Datos de la **Encuesta Nacional Sobre Uso del Tiempo** (INE, 2015)
-
-Principales Variables
-
-Para poder comprender el fenómeno, se utilizarán 2 variables independientes y 1 dependiente. Dentro de las variables independientes están la edad y la clase, mientras que la satisfacción con el uso del tiempo es la variable dependiente definida. La variable edad se considerará por tramos, los cuales estarán definidos según los datos que proporciona la encuesta, los cuales se asignan de la siguiente forma: 15 a 24 años, 25 a 34 años, 35 a 44 años, 45 a 54 años, 55 a 64 años, 65 años y más. Sin embargo, se convalidarán algunos tramos en función de la caracterización por grupos etarios. De esta forma, los jóvenes se definirán desde los 15 a 24 años, los adultos jóvenes desde los 25 a 34 años, los adultos desde los 35 a los 64 y la tercera edad se asignará al tramo 65 años y más.
-En relación a la clase social como variable independiente, esta se definirá de acuerdo a sus características territoriales, es decir, a la ocupación por comuna. Se le otorgará un sentido territorial a la clase social debido a la influencia que tiene en la satisfacción con el uso del tiempo, lo cual se puede ver, por ejemplo, en el tiempo de viaje dentro de la ciudad o la disponibilidad  de áreas verdes y recreativas.
-Finalmente, se definirá a la satisfacción con el uso del tiempo como la variable dependiente, la cual se construirá desde índices a partir de las siguientes preguntas del cuestionario de la ENUT:
-
-T11. ¿Qué tan satisfecho está con el tiempo que dedica a …?:
-
-Usted misma (o), Sólo si tiene pareja, Su pareja, Sólo si tiene hijos o hijas. Sus hijos(as),  Sólo si tiene padres. Sus padres, El trabajo, Amistades, Pasatiempos, Descanso
-
-T12. ¿Qué tan satisfecho se siente con los siguientes aspectos de su vida?
-
-Situación económica, Trabajo, Cantidad de tiempo libre, Calidad del tiempo libre, Equilibrio entre trabajo y vida familiar
-
-<hr>
-# Grupo 6: Sentido de pertenencia en estudiantes Chilenos.
+# Grupo 4: Sentido de pertenencia en estudiantes Chilenos.
 
 **Benjamín Césped, Adolfo González, Camilo Lazo, Alexis Villanueva**
+
+## Resumen
 
 Nuestra propuesta de análisis multinivel consiste en explicar el sentido de pertenencia según el autor Juvonen (2006), de las y los estudiantes en chile a partir variables que hacen referencia principalmente a las relaciones entre estudiantes, relaciones estudiante-docente, y relaciones padre/madre-estudiante, variables de vulnerabilidad de los establecimientos, etc. Para tales efectos se hará uso de forma primaria de la base de datos de la **PISA 2015**: esto incluye los cuestionarios para padres/madres, cuestionarios de escuela, estudiantes y docentes.
 
@@ -152,21 +69,26 @@ Nuestra propuesta de análisis multinivel consiste en explicar el sentido de per
 
 Como hipótesis general se contempla: Las y los estudiantes tendrán mayores niveles de sentido de pertenencia para con el establecimiento si los estudiantes son inmigrantes, no repitentes, menos ansiosos, más motivados, que valoren y disfruten la cooperación con sus pares, si cuentan con apoyo emocional de sus padres, si tienen menos comportamientos disruptivos en clases y si reciben poca violencia escolar de parte de sus pares. Los efectos de estas variables podrían verse amplificados si es que el tamaño del curso y de la escuela es menor, si los estudiantes pertenecen al promedio de estatus socioeconómico de la escuela, si la proporción de estudiantes mujeres u hombres es mayor o menor con respecto al género del/la estudiante y a la proporción de estudiantes inmigrantes dentro de la escuela con respecto al origen (migrante o no), del estudiante.
 
+## [Informe 1](../trabajos/g4/Cesped_Villanueva__Benjamin_Andres.Rmd)
+
 <hr>
-# Grupo 7: Bienestar en el territorio y manifestaciones de cohesión barrial en diferentes barrios del Gran Santiago: Propuestas de un modelo multinivel para la cohesión barrial
+
+# Grupo 5: Bienestar en el territorio y manifestaciones de cohesión barrial en diferentes barrios del Gran Santiago: Propuestas de un modelo multinivel para la cohesión barrial
 
 **Cristóbal Ortiz & Valentina Vásquez**
 
-La vida urbana en el Gran Santiago está marcada por una baja cohesión barrial y diferentes manifestaciones de conflictos urbanos, mientras que los barrios se encuentran diferenciados unos de otros en un contexto de alta segregación socioespacial. En este escenario, la presente investigación busca abordar la cohesión barrial, entendiendo por ella un proceso gradual y colectivo que refiere a la disposición de los sujetos de un barrio a enfrentarse juntos a diferentes aspectos de la cotidianidad. Se propone responder a la pregunta ¿En qué medida el nivel de bienestar territorial del barrio incide en la cohesión barrial que expresan los habitantes del Gran Santiago? y la principal hipótesis que guía la investigación postula que hay mayores niveles de cohesión barrial en barrios cuyo nivel de bienestar territorial es mayor.
+Esta investigación busca identificar las variables individuales y contextuales que afectan y explican la cohesión barrial entendida como sentido de pertenencia al barrio. Para ello se utilizan los datos del Estudio Longitudinal Social de Chile (ELSOC, 2016), cuya muestra incluye 2927 casos a nivel nacional y 720 para el Gran Santiago. Se operacionaliza cohesión barrial como variable dependiente, y, como variables independientes de nivel individual, conflicto meso-social, conflicto micro-social, calidad de relaciones sociales en el barrio y reputación barrial. Asimismo, se operacionalizan indicadores territoriales referidos a conflictividad macro-social como variables independientes de nivel contextual, agrupándolos en 184 zonas censales del Gran Santiago. Se elaboran y comparan modelos de regresión lineal múltiple para dar cuenta de las diferentes relaciones en el nivel individual, así como modelos multinivel para incorporar el efecto de las variables de contexto. El resultado principal indica que la cohesión barrial aumenta en la medida en que se percibe una alta calidad de relaciones sociales en el barrio, además, su presencia explica en buena medida la cohesión barrial. Por otro lado, la cohesión disminuye a mayor conflictividad en los niveles meso y micro-social, teniendo poca capacidad explicativa. Finalmente, se constata que el contexto sí influye en la cohesión, pues al agrupar por zonas, el 17% de la variación de la cohesión barrial se atribuye a la zona de residencia. Entre las variables de contexto que dan cuenta de dicha variación destaca la densidad poblacional, el score de violencia urbana y el nivel de accesibilidad a servicios públicos.
 
-Para la ejecución de la investigación se emplearán modelos de análisis multinivel a partir de los datos levantados el año 2016 por el Estudio Longitudinal Social de Chile (ELSOC), cuya muestra incluye un total de 2983 casos a nivel nacional.
+## [Informe 1](../trabajos/g5/cohesion_barrial.html)
 
-En consecuencia, el análisis busca relacionar la variable Bienestar Territorial, que agrupa diferentes indicadores de la calidad del territorio en cuanto a las dimensiones socioeconómica, ambiental, de infraestructura y de accesibilidad y  la variable Cohesión Barrial, la cual agrupa indicadores de sociabilidad dentro del barrio, confianza hacia los vecinos, participación barrial (en juntas de vecinos), identificación e integración al barrio. Adicionalmente, se evalúa la inclusión de variables de nivel 2 que den cuenta de los niveles de conflicto macro-social, reputación barrial y segregación urbana en los distintos barrios del Gran Santiago.
 
 <hr>
-# Grupo 8: Análisis de la preocupación del medioambiente a partir de contextos económicos nacionales
+
+# Grupo 6: Análisis de la preocupación del medioambiente a partir de contextos económicos nacionales
 
 **Joaquin Quiroz – Gustavo Salinas**
+
+## Resumen
 
 - Problema de investigación: Factores que inciden en la preocupación medioambiental.
 
@@ -176,57 +98,28 @@ En consecuencia, el análisis busca relacionar la variable Bienestar Territorial
 
 - H2: Los países con más recursos naturales (entendiendo esto como valor de cambio) tenderán a tener menor preocupación por el medioambiente, puesto que tenderán a asociar la estabilidad de sus economías a modelos económicos extractivitas.
 
-<hr>
-# Grupo 9: Género y roles
-
-**Marcos Benjamín Baeza Garrido y Maria Francisca**
-
-- Problema de investigación: Se pretende investigar el efecto de la “ideología de género” en la satisfacción de mujeres con la repartición del trabajo doméstico con sus parejas. Con ideología de género abarcamos al conjunto de opiniones referidas a los roles masculinos y femeninos.
-
-- Hipótesis (multinivel):
-
-  - En la medida en que la brecha salarial entre hombres y mujeres disminuye, aumenta la satisfacción con la repartición del trabajo doméstico en el hogar
-  - En la medida que existe un equilibrio entre hombres y mujeres en el órgano legislativo aumenta la satisfacción con la repartición trabajo doméstico en el hogar
-  - A mayor integración femenina en el mercado laboral, menor satisfacción con la repartición de trabajo doméstico.
-  -
-- Datos a utilizar: Se utilizará la **ISSP 2012 - "Family and Changing Gender Roles IV"**.
-- Principales variables:
-Las variables a utilizar a nivel individual son variables de tipo ideológicas referidas a roles familiares, además de variables de tipo material.
-
-  - Satisfacción con la vida familiar
-  - División real trabajo doméstico según tipo de labor. (quién hace qué)
-  - Quién tiene el salario más alto en la pareja
-  - Estar demasiado cansado en el trabajo por los quehaceres del hogar.
-
-Para el análisis multinivel se trabajará a nivel países utilizará la diferencia de sueldos entre hombres y mujeres por cada país, la participación en el mercado laboral femenina y la proporción de mujeres en el órgano legislativo.
+## [Informe 1](../trabajos/g6/Informe_parcial_Preocupacion_Ambiental.html)
 
 <hr>
-# Grupo 10: Satisfacción con la democracia en paises del Cono Sur.
+
+# Grupo 7: Satisfacción con la democracia en países de América
 
 **Roque Alfaro Navarro, Kevin Carrasco Quintanilla, Sebastián Cortínez Rojas y Francisco Delgado Munizaga.**
 
-- Problema de investigación: El presente trabajo se enmarca en un contexto de creciente desconfianza hacia el sistema y las instituciones políticas debido a diversos escándalos de corrupción y desilusión en torno al cumplimiento de programas políticos en el Cono Sur. En ese sentido, el fenómeno a investigar será la variación de la confianza en el sistema político en países de Sudamérica, específicamente Argentina, Brasil, Chile, Perú y Uruguay. Para esto se utilizará la encuesta **LAPOP 2017**, de los países ya mencionados, que en conjunto suman un total de 8846 casos.
+## Resumen
 
-- Hipótesis (multinivel):   La hipótesis que se planteará es que los paises de América del Sur que presentan mayor desconfianza hacia el sistema político son aquellos que presentan mayores casos de corrupción de las autoridades y menores índices de satisfacción personal.
+El retorno a la democracia para los países de América se gestó con la promesa de que traería cambios positivos en diferentes facetas de la vida ciudadana. No obstante, debido a la forma de implementar los sistemas democráticos y condiciones externas como la globalización y el sistema económico mundial, se ha generado insatisfacción de las personas con el sistema democrático. Por lo anterior resulta importante, y es lo que este estudio pretende, identificar cuales son los factores que influyen mayormente en un mayor o menor nivel de satisfacción con la democracia en los países de América. Para poder profundizar en esta temática, se aplicará un estudio multinivel y se utilizara una base de datos de elaboración propia a partir de las bases de datos de 21 países de América de LAPOP 2016, la cual cuenta con un (N=29.468) casos. Los resultados del análisis sugieren que uno de los factores que generan mayor insatisfacción con la democracia son los altos niveles de corrupción que existen al interior de los países, fundamentalmente en el mundo político, generando en consecuencia bajos niveles de satisfacción con la vida en los ciudadanos.
 
-- Principales variables: Satisfacción con la democracia (dependiente), Percepción de la corrupción política, Satisfacción personal, País, Sexo y Edad.
+## [Informe 1](../trabajos/g7/trabajo.html)
 
-# Grupo 11: ¿Qué peso tiene lo organizacional y económico en la ocurrencia de las huelgas extralegales en Chile?: Un análisis regional
+<hr>
+
+# Grupo 8: ¿Qué peso tiene lo organizacional y económico en la ocurrencia de las huelgas extralegales en Chile?: Un análisis regional
 
 **Valentina Andrade, Matías Montero y Carlos Budnevich**
 
-Las huelgas laborales permiten dar cuenta del grado de conflictividad entre trabajadores y empleadores (Burawoy, 1981). En general, estas provienen del fracaso de una negociación colectiva que es, una instancia reglada por las leyes laborales que intenta generar acuerdos sobre algunas condiciones de trabajo y empleo. Si la negociación no llega a su objetivo, los trabajadores votan dos opciones: se acepta la última oferta del empleador o se comenzará con una huelga. Pero esta no es la única opción. En contextos donde la institucionalidad laboral es altamente restrictiva como en Chile (Waas, 2012) se ha podido evidenciar el aumento de huelgas fuera de la ley (Armstrong & Águila, 2006) o extra-legales (Medel, Pérez, Velásquez, & Morales, 2017; OHL, 2017).
+## Resumen
 
-En Chile, estas transformaciones han provocado que el estudio de la huelga se haya vuelto relevante: desde investigaciones que reconstruyen el conflicto laboral (Armstrong & Águila, 2006), describen el último ciclo huelgístico (Aravena & Núñez, 2009), su relación en el contexto neoliberal (Aguilar & Henríquez, 2017; Gaudichaud, 2015), los resultados de las huelgas (Ratto, 2017), las dinámicas de la huelga legal (Gutiérrez Crocco, 2017) y extra-legal (Pérez, Medel, & Velásquez, 2015). Sin embargo, a diferencia de la literatura internacional (Franzosi, 1989; Jansen, Akkerman, & Vandaele, 2017; Kelly, 2012), poco se ha debatido sobre los factores que explican la incidencia de la huelga. Un esfuerzo ha sido el de Medel y Pérez (2017), quienes abordan como ciertas características del régimen de trabajo y de la organización sindical se asocian con las huelgas extra-legales, relegando el peso de la economía que hasta entonces había tenido (Hyman, 1989).
+Uno de los elementos principales a partir del cual se pueda examinar la conflictividad laboral son las huelgas de trabajadores. Asimismo, resulta ser uno de los mecanismos más usuales que pueden utilizar los trabajadores para defender sus intereses frente a sus empleadores. El carácter que asumen las huelgas puede ser legal o extra legal, siendo las primeras un objeto de estudio ampliamente trabajado por la literatura en la medida que tienen una mayor frecuencia. No obstante, en contextos como Chile, donde la institucionalidad laboral es altamente restrictiva, las huelgas extra legales se vuelven más frecuentes y, por ende, relevantes (R. Medel, Pérez, Velásquez, & Morales, 2017; OHL, 2017). La literatura aún no ha explorado con profundidad las diferentes aristas que explican la ocurrencia de una huelga extra legal, de forma que este artículo tiene por objetivo dilucidar el peso que tienen variables económicas y organizacionales en que la ocurrencia de una huelga extra legal, tanto a nivel de la empresa como de la región donde se desenvuelve. Se trabajará con los datos del Observatorio de Huelgas Laborales del año 2017, contando con un total de 325 huelgas ese año en las 15 regiones del país (variable cluster o nivel 2). Los resultados arrojan que la ocurrencia de las huelgas extra-legales se vincula con la región en la que esta ocurre, no obstante, las variables económicas y organizacionales incluidas no logran dar cuenta de esta dependencia geográfica.
 
-La investigación a desarrollar busca debatir sobre los factores que inciden en las ocurrencia de las huelgas extra-legales. Con la particularidad, como ha propuesto Franzosi (2006), de considerar aspectos contextuales de donde ocurre la huelga como el lugar geográfico. Así, distintos estudios cuantitativos sobre las huelgas han mostrado que los ciclos de protesta laboral tienen cierta regularidad y prominencia según el lugar (e.g., país, región) (Jansen, 2014). En consecuencia, la presente investigación buscará evaluar la relación entre factores empresa, con predictores como el tipo de organización sindical, tamaño del sindicato, número de trabajadores involucrados en la huelga, tamaño de la empresa; a nivel de las regiones, con predictores como tasa de sindicalización, presencia de federaciones y centrales, desempleo, inflación y PIB de la región. Para poner a prueba empíricamente rasgos individuales y contextuales de manera simultánea, proponemos realizar un modelo de regresión logística multinivel empleando los datos del Observatorio de Huelgas Laborales (2017), a modo de dilucidar diferencias vinculadas a factores contextuales del territorio o región, junto con las variables a nivel empresa esbozadas anteriormente.
-
-Hipótesis
-
-H1: La presencia del sindicato a nivel de la empresa se asocia negativamente con la
-probabilidad de ocurrencia de una huelga extra-legal
-
-H2: Existe una asociación positiva entre la inflación de la región y la probabilidad de ocurrencia de una huelga extralegal
-
-H3: La relación positiva entre tamaño de empresa y ocurrencia de huelga extralegal es
-moderada negativamente por la tasa de sindicalización de la región.
+## [Informe 1](../trabajos/g8/Primera-Entrega.-Andrade_-Budnevich-y-Montero.pdf)
