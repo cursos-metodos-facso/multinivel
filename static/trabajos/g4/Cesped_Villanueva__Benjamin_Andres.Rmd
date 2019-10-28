@@ -3,12 +3,12 @@ title: "Sentido de Pertenencia en estudiantes chilenos"
 author: "Césped, González, Lazo, Villanueva"
 date: "13-10-2019"
 output:
-  pdf_document: default
+ # pdf_document: default
   html_document: default
 ---
 
 ```{r setup, include=FALSE}
-knitr::opts_chunk$set(echo = TRUE)
+knitr::opts_chunk$set(echo = TRUE, warning = FALSE)
 ```
 _1. Introducción  una aproximación hacia el sentido de pertenencia en estudiantes chilenos_
 
@@ -45,7 +45,7 @@ El tamaño muestral para la aplicación del año 2015 cuenta con 6640 observacio
 pacman::p_load(ggplot2, foreign, lme4, lmtest, lattice, stargazer, nortest, ggplot2,dplyr,car,corrplot,reghelper,haven,texreg)
 
 #abrir dataset
-dataset = read.csv("C:/Users/Camilo/Desktop/lmer4/CY6_MS_CMB_MERGE_F.csv")
+dataset = read.csv("CY6_MS_CMB_MERGE_F.csv")
 
 #Selección de variables
 dataset=dataset %>% select(CNTSCHID,BELONG,ST004D01T,MOTIVAT,COOPERATE,unfairteacher,ESCS,SCHSIZE) %>% 
@@ -96,7 +96,7 @@ summary(dataset$m_gen)
 dataset<-dataset %>%
   group_by(CNTSCHID) %>%
   mutate(m_escs=mean(ESCS))
-(dataset$m_escs)
+# (dataset$m_escs)
 ```
 
 ```{r}

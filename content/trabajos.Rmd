@@ -69,7 +69,7 @@ Nuestra propuesta de análisis multinivel consiste en explicar el sentido de per
 
 Como hipótesis general se contempla: Las y los estudiantes tendrán mayores niveles de sentido de pertenencia para con el establecimiento si los estudiantes son inmigrantes, no repitentes, menos ansiosos, más motivados, que valoren y disfruten la cooperación con sus pares, si cuentan con apoyo emocional de sus padres, si tienen menos comportamientos disruptivos en clases y si reciben poca violencia escolar de parte de sus pares. Los efectos de estas variables podrían verse amplificados si es que el tamaño del curso y de la escuela es menor, si los estudiantes pertenecen al promedio de estatus socioeconómico de la escuela, si la proporción de estudiantes mujeres u hombres es mayor o menor con respecto al género del/la estudiante y a la proporción de estudiantes inmigrantes dentro de la escuela con respecto al origen (migrante o no), del estudiante.
 
-## [Informe 1](../trabajos/g4/Cesped_Villanueva__Benjamin_Andres.Rmd)
+## [Informe 1](../trabajos/g4/Cesped_Villanueva__Benjamin_Andres.html)
 
 <hr>
 
