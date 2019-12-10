@@ -32,3 +32,4 @@ slug: programacion
 |   |   |   |    [O’Conell & McCoach 11, Reporting results from multilevel](../readings/OConnellchap8.pdf)   |   |
 |   | 8  | Ronda de presentaciones grupales   |   | [Práctica E: Ajuste y reporte](https://multinivel.netlify.com/practicas/e_ajustereporte.html)  |
 |   | 15  | [Interacción entre niveles](../docpres/07_interacciones/7interacciones.html)  | [Aguinis et al (2013) Best practices MLM interactions](../readings/aguinis2013crosslevel.pdf)  | [Práctica F: Interacciones entre niveles](https://multinivel.netlify.com/practicas/f_interaccion.html)   |
+| Diciembre  | 10  | [Centrado](../docpres/08_centering/08centering.html)  | [Enders & Tofighi 2007) Centering predictor variables MLM](../readings/enderstofighi.pdf)  |    |
