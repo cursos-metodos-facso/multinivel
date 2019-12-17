@@ -2,13 +2,92 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Métodos Multinivel</title>
-    <link>/index.html</link>
+    <link>/</link>
     <description>Recent content on Métodos Multinivel</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 17 Jan 2019 00:00:00 +0000</lastBuildDate>
     
 	<atom:link href="/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title></title>
+      <link>/reading/02-reading/</link>
+      <pubDate>Thu, 17 Jan 2019 00:00:00 +0000</pubDate>
+      
+      <guid>/reading/02-reading/</guid>
+      <description> Required </description>
+    </item>
+    
+    <item>
+      <title>Evaluaciones</title>
+      <link>/assignments/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/assignments/</guid>
+      <description>Trabajo de investigación El trabajo final del curso consiste en una aplicación práctica de la estimación de modelos multinivel a una problemática definida por los alumnos y para la cual se cuenta con datos secundarios. Este trabajo posee dos entregas, tal como se señala en el programa del curso: un informe de avance (30% nota final) y un informe final (40%). La presentación oral del trabajo equivale al 20% de la nota final, y el 10% restante a una evaluación de pares (detalles abajo)</description>
+    </item>
+    
+    <item>
+      <title>Links</title>
+      <link>/links/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/links/</guid>
+      <description> Ejemplo de bases de datos para trabajos  World Values Survey International Social Survey Programm LAPOP - Latin American Public Opinion Project Latinobarómetro Estudios educacionales internacionales  Ejemplos de artículos Multinivel  Numero especial de European Sociological Review Richard Traunmüller, Moral Communities? Religion as a Source of Social Trust in a Multilevel Analysis of 97 German Regions, European Sociological Review, Volume 27, Issue 3, June 2011, Pages 346–363, https://doi.org/10.1093/esr/jcq011  R, software y otros  Ejemplos análisis y visualización con lme4 Libro AnalizaR datos políticos Breve introducción a R Manual de R de Boccardo &amp;amp; Ruiz R para ciencia de datos Hoja resumen Rmarkdown (cheatsheet) Guía de documentos dinámicos  </description>
+    </item>
+    
+    <item>
+      <title>Programa</title>
+      <link>/syllabus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/syllabus/</guid>
+      <description>Descripción Gran parte de la investigación sociológica hace referencia al contexto en que las personas viven y se desenvuelven, como por ejemplo lugares de trabajo, salas de clases, barrios, países. Sin embargo, modelos tradicionales como ANOVA y regresión poseen limitaciones a la hora de integrar datos en distintos niveles (individual y contextual), así como también la interacción entre ambos (por ejemplo, la relación entre nivel de vulnerabilidad de escuelas, capital cultural de los padres y rendimiento académico de estudiantes).</description>
+    </item>
+    
+    <item>
+      <title>Programación sesiones</title>
+      <link>/programacion/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/programacion/</guid>
+      <description> (programación original)
+
+ Documentos de presentación
+ Lecturas
+ Evaluaciones, talleres y otros
+
+            Agosto 6 Introducción Coleman 1986    13 Bases Finch cap. 1, 2 &amp;amp; 3 Práctica A: Bases   20 Estimación con distintos niveles     27 Correlación intra clase y estimación MLM  Práctica B: Primera estimación  Septiembre 3 Suspensión por toma     10 Suspensión por toma     24 Efectos Aleatorios  Practica C: Efectos aleatorios        Octubre 1 Ajuste y Reporte O’Conell &amp;amp; McCoach 7, Evaluating model fit and adequacy Practica D: Integración datos L2     O’Conell &amp;amp; McCoach 11, Reporting results from multilevel    8 Ronda de presentaciones grupales  Práctica E: Ajuste y reporte   15 Interacción entre niveles Aguinis et al (2013) Best practices MLM interactions Práctica F: Interacciones entre niveles  Diciembre 10 Centrado Enders &amp;amp; Tofighi 2007) Centering predictor variables MLM    17 Extensiones      </description>
+    </item>
+    
+    <item>
+      <title>Programación sesiones</title>
+      <link>/schedule/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/schedule/</guid>
+      <description>   Readings  Code  Class materials    Agosto 8 Introducción      January 17th Models of work      January 24th Getting data in to R      January 31st Coding and recoding      February 7th Missing data      February 14th       February 21st More on dplyr       </description>
+    </item>
+    
+    <item>
+      <title>Reference</title>
+      <link>/reference/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/reference/</guid>
+      <description> (pendiente) </description>
+    </item>
+    
+    <item>
+      <title>Trabajos</title>
+      <link>/trabajos/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/trabajos/</guid>
+      <description>Grupo 1: Migracion y vivienda en chile: Un estudio de los determinantes de los costos de arriendo en 2017 Resumen Informe 1  Grupo 2: ¿Qué pueden hacer las escuelas para disminuir la desigualdad en el conocimiento cívico? Resumen Informe 1  Grupo 3: Jóvenes chilenos y autoritarismo: Análisis multinivel sobre factores que predicen la actitud de los jóvenes chilenos hacia el autoritarismo Resumen Informe 1  Grupo 4: Sentido de pertenencia en estudiantes Chilenos.</description>
+    </item>
     
   </channel>
 </rss>
