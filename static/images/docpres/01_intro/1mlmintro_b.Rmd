@@ -1,0 +1,53 @@
+---
+title: "ISPP Lisboa presentation"
+subtitle: " "
+author: ".small[Juan Carlos Castillo<br><br> Departamento de Sociología - UCH / COES <br><br>]"
+date: " "
+output:
+  xaringan::moon_reader:
+    css: ["../xaringan_custom/xaringan-themer.css","../xaringan_custom/progress-bar.css","https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"]
+    lib_dir: libs
+    nature:
+      slideNumberFormat:   |
+        <div class="progress-bar-container">
+          <div class="progress-bar" style="width: calc(%current% / %total% * 100%);">
+          </div>
+        </div>`
+      highlightStyle: github
+      highlightLines: true
+      countIncrementalSlides: false
+      beforeInit: "../xaringan_custom/macros.js"
+    seal: false # esto omite title slide automática
+---
+class: inverse, bottom, right
+
+```{r setup, include=FALSE, cache = FALSE}
+require("knitr")
+options(htmltools.dir.version = FALSE)
+pacman::p_load(RefManageR)
+bib <- ReadBib("../../bib/electivomultinivel.bib", check = FALSE)
+```
+
+```{r eval=FALSE, echo=FALSE}
+# Correr esta linea para ejecutar
+rmarkdown::render('ispp2019lisboa.Rmd', 'xaringan::moon_reader')
+```
+
+
+<!---
+About macros.js: permite escalar las imágenes como [:scale 50%](path to image), hay si que grabar ese archivo js en el directorio.
+--->
+
+# Does information about inequality and poverty influence opportunity beliefs?
+## *A survey experiment*
+<br>
+<hr>
+### Luis Maldonado, _Pontificia Universidad Católica de Chile_ - lmaldona@uc.cl
+### Juan Carlos Castillo, _Universidad de Chile & COES_
+### (Leslie McCall, _Stone Center of Economic Inequality_)
+
+<br>
+
+.small[FONDECYT grant 1160921 - ISPP Lisboa 2019]
+
+---
