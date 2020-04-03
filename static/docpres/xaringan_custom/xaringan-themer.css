@@ -20,6 +20,9 @@
 @import url(https://fonts.googleapis.com/css?family=Yanone+Kaffeesatz);
 @import url(https://fonts.googleapis.com/css?family=Source+Code+Pro:400,700);
 
+.title-slide .remark-slide-number {
+  display: none;
+}
 
 body {
   font-family: 'Droid Serif', 'Palatino Linotype', 'Book Antiqua', Palatino, 'Microsoft YaHei', 'Songti SC', serif;
