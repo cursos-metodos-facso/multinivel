@@ -1,3 +1,0 @@
-- Missings, tema de listwise x modelos
-- estructuras de covarianza
-- 

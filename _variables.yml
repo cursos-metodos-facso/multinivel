@@ -1,0 +1,33 @@
+author: Juan Carlos Castillo (Credits to Andrew Heiss)
+
+instructor:
+  name: Prof. Juan Carlos Castillo
+  name_no_title: Juan Castillo
+  email: juancastillov@uchile.cl
+  url: "https://www.jc-castillo.com"
+  twitter:
+  github: juancarloscastillo
+  office: "325 Sociología FACSO, Universidad de Chile"
+  contact_policy: >-
+    E-mail y foros (Giscus) en las páginas de las clases y prácticos
+  appointment_url: https://calendly.com/juancastillov/horas-oficina
+
+course:
+  number: "SOC01133/MCS7157"
+  semester: "Segundo 2023"
+  days: "Viernes"
+  time: "10:15 - 11:45"
+  location: "Sala 44 - FACSO"
+  dates: "11 Agosto al 28 de Noviembre, 2023"
+  github: "https://github.com/cursos-metodos-facso/multinivel"
+  url: "https://multinivel.netlify.app"
+  copyright_year: "2023"
+  slack: ""
+
+university:
+  name: Universidad de Chile
+  url: "https://www.uchile.cl"
+
+school:
+  name: Departamento de Sociología, Facultad de Ciencias Sociales
+  url: "https://facso.uchile.cl/"

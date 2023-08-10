@@ -1,0 +1,55 @@
+---
+title: "Noticias"
+lang: es
+listing:
+  id: "news-table"
+  contents: .
+  sort: "date desc"
+  page-size: 100
+  type: table
+  table-hover: true
+  fields: [date, title, categories]
+  filter-ui: [title, date, categories]
+  sort-ui: true
+  date-format: "dddd MMMM D, YYYY [at] h:mm A"
+  feed: 
+    title: "Noticias y mensajes importantes Estadística Correlacional"
+#    description: "Updates and FAQs for PMAP 8521 at Georgia State University"
+  categories: false
+page-layout: full
+sidebar: false
+toc: false
+format:
+  html:
+    # https://github.com/quarto-dev/quarto-cli/blob/main/src/resources/formats/html/templates/title-block.html
+    template-partials:
+      - ../html/news-default/title-block.html
+---
+
+```{r get-vars, include=FALSE}
+base_url <- yaml::read_yaml(here::here("_quarto.yml"))$website$`site-url`
+feed_name <- "news/index.xml"
+feed_url <- paste0(base_url, "/", feed_name)
+```
+
+::: {#news-table}
+:::
+
+::: {.callout-tip}
+
+## Suscribirse!
+
+Puedes usar un lector de feeds como [Feedly](https://feedly.com/) o un servicio [RSS-to-email](https://www.google.com/search?q=rss+to+email)  como [Blogtrottr](https://blogtrottr.com/) para suscribirte a cualquiera de estos mensajes. 
+::: {.grid}
+
+::: {.g-col-12 .g-col-md-2}
+<p class="download-btn"><a class="btn btn-danger btn-sm" href="`r feed_url`" role="button">{{< fa square-rss >}} RSS</a></p>
+:::
+
+::: {.g-col-12 .g-col-md-10}
+<p><input class="form-control" type="text" value="`r feed_url`" onclick="this.select()" readonly></p>
+:::
+
+:::
+
+:::

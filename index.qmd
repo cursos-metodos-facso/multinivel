@@ -1,0 +1,57 @@
+---
+title: "Modelos Multinivel"
+subtitle: "Unidades en contexto"
+details: |
+  SOC01133/MCS7157 • Segundo Semestre 2023<br>Departamento de Sociología, Facultad de Ciencias Sociales<br>Universidad de Chile
+sidebar: false
+toc: false
+page-layout: full
+format:
+  html:
+    template-partials:
+      - html/home/title-block.html
+course-logo: /files/img/logo.png
+---
+
+```{r set-dependencies, include=FALSE}
+# Site-wide targets dependencies
+withr::with_dir(here::here(), {
+  targets::tar_load(project_zips)
+  targets::tar_load(xaringan_slides)
+  targets::tar_load(xaringan_pdfs)
+})
+```
+
+::: {.home}
+
+::: {.grid .course-details}
+
+::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
+### Profesor
+
+- {{< fa user >}} &nbsp; [{{< var instructor.name >}}]({{< var instructor.url >}})
+- {{< fa university >}} &nbsp; {{< var instructor.office >}}
+- {{< fa envelope >}} &nbsp; <a href="mailto:{{< var instructor.email >}}">{{< var instructor.email >}}</a>
+- {{< fa calendar-check >}} &nbsp; [Agendar reunión]({{< var instructor.appointment_url >}})
+
+
+
+:::
+
+::: {.g-col-12 .g-col-sm-6 .g-col-md-4}
+### Actividades
+
+- {{< fa university >}} &nbsp; **Viernes 10:15-11:45** - Sala 44 FACSO
+
+:::
+
+::: {.g-col-12 .g-col-md-4 .contact-policy}
+### Contacto
+
+{{< var instructor.contact_policy >}}
+:::
+
+:::
+
+
+:::

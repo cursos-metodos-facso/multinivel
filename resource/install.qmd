@@ -1,0 +1,7 @@
+---
+title: "Instalar R, RStudio y tidyverse"
+---
+
+```{r setup, include=FALSE}
+library(knitr)
+```

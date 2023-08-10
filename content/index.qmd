@@ -1,0 +1,7 @@
+---
+title: "Sobre clases y lecturas"
+---
+
+Cada clase tiene como referencia lecturas que deben completarse antes de la sesión correspondiente.
+
+En esta sección se encuentran disponibles los documentos de presentación que sirven de base a cada clase. Para verlos en pantalla completa presionar F sobre el documento.

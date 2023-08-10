@@ -1,0 +1,9 @@
+date-heading:
+  content: "Completar hasta as 11:59 PM del"
+  class: "bg-assignment"
+date-format: "full"
+
+format:
+  html:
+    template-partials:
+      - ../html/title-block.html

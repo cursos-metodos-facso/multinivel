@@ -1,0 +1,14 @@
+{
+  "hash": "63a7da818eef6e45241ad92165971255",
+  "result": {
+    "markdown": "---\ntitle: \"Instalar R, RStudio y tidyverse\"\n---\n\n\n",
+    "supporting": [],
+    "filters": [
+      "rmarkdown/pagebreak.lua"
+    ],
+    "includes": {},
+    "engineDependencies": {},
+    "preserve": {},
+    "postProcess": true
+  }
+}
